@@ -1,0 +1,14 @@
+/* General Styling */
+:root {
+  --darkGreen: hsl(155, 28%, 18%);
+  --green: hsl(98, 34%, 55%);
+  --lightGreen: hsl(102, 28%, 63%);
+  --orange: hsl(45, 85%, 67%);
+  --darkOrange: hsl(22, 87%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
