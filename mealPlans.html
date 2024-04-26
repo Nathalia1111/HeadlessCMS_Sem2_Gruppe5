@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodFiesta - Meal plans</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/functions.js" defer></script>
-    <script src="./assets/js/mainPage.js" defer></script>
-    <script src="./assets/js/recipes.js" defer></script>
-    <script src="./assets/js/recipe.js" defer></script>
-    <script src="./assets/js/mealPlans.js" defer></script>
-    <script src="./assets/js/newsAndBlogs.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <img src=".assets/img/">
-    </header>
-    <main>
 
-    </main>
-    <footer>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodFiesta - Meal plans</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- KILDE:  -->
+  <script src="./assets/js/functions.js" defer></script>
+  <script src="./assets/js/mainPage.js" defer></script>
+  <script src="./assets/js/recipes.js" defer></script>
+  <script src="./assets/js/recipe.js" defer></script>
+  <script src="./assets/js/mealPlans.js" defer></script>
+  <script src="./assets/js/newsAndBlogs.js" defer></script>
+</head>
+
+<body>
+  <header id="headerMealPlans">
+    <img src="./assets/img/whiteWawe" alt="white wawe"/>
+    <h1>Meal Plans</h1>
+    <p class="breadcrumbsMealPlans">Recipes > Families</p>
+  </header>
+  <main>
+    <h2>Overview of all our meal plans</h2>
+    <sektion class="mealPlansOverview">
+      <div>
+        <p>Budget</p>
+        <img src=".assets/img/plate 4" alt="budget meal plan">
+      </div>
+      <div>
+        <p>Family</p>
+        <img src=".assets/img/plateBørn" alt="Family meal plan">
+      </div>
+      <div>
+        <p>Vegetarian</p>
+        <img src=".assets/img/plate 3" alt="Vegetarian meal plan">
+      </div>
+      <div>
+        <p>Gluten free</p>
+        <img src=".assets/img/plate 2" alt="Gluten free meal plan">
+      </div>
+    </sektion>
+    <section class="thisWeek">
+      <div class="weekMealPlan">
+        <img src=" " alt=" ">
+        <p>Monday</p>
+      </div>
+      <div class="weekMealPlan">
+        <img src=" " alt=" ">
+        <p>Thuesday</p>
+      </div>
+      <div class="weekMealPlan">
+        <img src=" " alt=" ">
+        <p>Wednesday</p>
+      </div>
+      <div class="weekMealPlan">
+        <img src=" " alt=" ">
+        <p>Thursday</p>
+      </div>
+      <div class="weekMealPlan">
+        <img src=" " alt=" ">
+        <p>Friday</p>
+      </div>
+      <button class="btnShoppinglist">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Add ingrediens to shoppinglist
+      </button>
+    </section>
+    <section class="previousMealPlans">
+      <h2>See previous meal plans</h2>
+      <img src=" " alt=" ">
+      <p>Week 16</p>
+      <img src=" " alt=" ">
+      <p>Week 15</p>
+      <img src=" " alt=" ">
+      <p>Week 14</p>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+
 </html>

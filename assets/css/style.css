@@ -18,6 +18,37 @@
 
 
 /* Meal plans START */
+.headerMealPlans {
+  background-image: url(../img/COLOURBOX41284258.jpg);
+  /* KILDE: https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
+}
+
+.breadcrumbsMealPlans {
+  font-size: 20px;
+}
+
+
+.mealPlansOverview {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.thisWeek {
+background-image: url(../img/yellowWawe.svg);
+}
+
+.btnShoppinglist {
+background-color: var(--darkOrange);
+border: var(--darkOrange);
+border-radius: 40px;
+padding: 10px 20px;
+}
+
+.previousMealPlans {
+
+}
+
 
 
 /* Meal plans SLUT */
