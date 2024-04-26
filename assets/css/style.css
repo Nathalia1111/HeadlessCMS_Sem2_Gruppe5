@@ -21,14 +21,17 @@
 #headerMealPlans {
   background-image: url(../img/COLOURBOX41284258.jpg); 
   /* KILDE: https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
-  height: 584px;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-
+#whiteWawe {
+  position: absolute;
+  top: 380px;
+}
 .breadcrumbsMealPlans {
   font-size: 20px;
 }
