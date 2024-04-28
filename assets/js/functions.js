@@ -1,5 +1,6 @@
 const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
-
+let recipeData;
+const selectEl = document.querySelectorAll("select")
 
 function renderAllrecipes(containerToFill, recipes) {
 
@@ -33,7 +34,9 @@ function getRecipes(quantity) {
         .then((res) => res.json())
         .then((recipes) => {
             console.log(recipes)
+            recipeData = recipes;
             return (recipes);
         })
         .catch(err => console.log("Fejl", err));
 }
+
