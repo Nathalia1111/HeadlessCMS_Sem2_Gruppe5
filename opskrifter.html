@@ -6,6 +6,7 @@
     <title>FoodFiesta - Opskrifter</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./assets/js/functions.js" defer></script>
     <script src="./assets/js/opskrifter.js" defer></script>
    
@@ -17,29 +18,29 @@
     </header>
     <main>
       <div class="heroPicture">
-        <h1>Recipies</h1>
-      </div>
-
-      <div class="weekPlanner">
-
-        <div class="waves">
-        <div class="weekday"><p>Monday</p></div>
-        <div class="weekday"><p>Tuesday</p></div>
-        <div class="weekday"><p>Wedensday</p></div>
-        <div class="weekday"><p>Thursday</p></div>
-        <div class="weekday"><p>Friday</p></div>
+        <h1>Recipes</h1>
+        <div class="search">
+          <p>Search...</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
+
+      <div class="newestRecipes">
+        <h2 class="headlineNewRecipes">New Recipes</h2>
+        <div class="thisWeek">
+        </div>
+      </div>
+
   
-      <section class="latestRecipes"></section>
+      <button class="filterBtn">Filters <i class="fa-solid fa-filter"></i></button>
 
       <section class="filters">
-        <select name="cookingTime" id="cookingTime">
-          <option value="default" disabled selected>Cooking Time</option>
-          <option value="fast">Fast</option>
-          <option value="medium">Medium</option>
-          <option value="slow">Slow</option>
-        </select>
+          <select name="cookingTime" id="cookingTime">
+            <option value="default" disabled selected>Cooking Time</option>
+            <option value="fast">Fast</option>
+            <option value="medium">Medium</option>
+            <option value="slow">Slow</option>
+          </select>
 
         <select name="cookingMethod" id="cookingMethod">
           <option value="default" disabled selected>Cooking Method</option>
@@ -78,7 +79,7 @@
           <option value="halloween">Halloween</option>
           <option value="thanksgiving">Thanksgiving</option>
         </select>
-        <br>
+    
         <select name="nutritionalFocus" id="nutritionalFocus">
           <option value="default" disabled selected>Nutritional Focus</option>
           <option value="glutenFree">Gluten free</option>
@@ -123,7 +124,9 @@
           <option value="snack">Snack</option>
         </select>
       </section>
-
+      <button class="searchFilter">Start søgning</button>
+      <section class="recipeIndex">
+      </section>
 </main>
     <footer>
 
