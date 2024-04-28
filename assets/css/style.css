@@ -28,6 +28,26 @@
   border-radius: 30px;
 }
 
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.heroPicture {
+  width: 100%;
+}
+
+.heroPicture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wave {
+  max-width: 100%;
+
+}
+
 
 
 
