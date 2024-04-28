@@ -1,4 +1,6 @@
 /* General Styling */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 :root {
   --blueishBlack: hsl(237, 95%, 8%);
   --darkGreen: hsl(155, 28%, 18%);
@@ -13,4 +15,225 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a,
+p,
+h3 {
+  font-family: "open sans";
+}
+
+/* ---Recipe--- */
+/* Navigation */
+.logo {
+  color: var(--darkGreen);
+  font-weight: 600;
+  font-family: "Ubuntu";
+  font-size: 30px;
+}
+
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--green);
+  padding-block: 20px;
+}
+
+nav ul a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: 1.2rem;
+}
+
+.login {
+  margin-inline: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-inline: 10px;
+}
+
+/* Hero img */
+.wave {
+  background-image: url(../img/whiteWawe.svg);
+  padding-block: 50px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45%;
+}
+
+.hero {
+  background-image: url(../img/COLOURBOX49500855.jpg);
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: left;
+  position: relative;
+}
+
+.hero article {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.searchbar {
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.692);
+  font-size: 1.1rem;
+  padding-block: 15px;
+  padding-left: 20px;
+  color: var(--blueishBlack);
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.title {
+  color: var(--darkOrange);
+  font-family: "Ubuntu";
+  margin-top: 40px;
+  text-shadow: 3px 3px 4px hsla(0, 0%, 11%, 0.237);
+}
+
+.title h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 3.5rem;
+}
+
+/* Recipe */
+.recipe {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.recipe div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.information img {
+  width: 500px;
+  height: 300px;
+}
+
+.information {
+  margin-inline: 15vw;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--blueishBlack);
+  margin-inline: 10px;
+}
+
+.links a:first-child {
+  margin-left: 30px;
+}
+
+/* other recipe section */
+#informationBox {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: var(--orange);
+}
+
+#informationBox button {
+  background-color: var(--darkOrange);
+  border-style: none;
+  border-radius: 20px;
+}
+
+#informationBox button:nth-of-type(1) {
+  padding-inline: 70px;
+  padding-block: 7px;
+  margin-bottom: 20px;
+}
+
+#informationBox button:nth-of-type(2) {
+  padding-inline: 30px;
+  padding-block: 7px;
+}
+
+.recipeSecondSection {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 250px;
+  grid-template-rows: 150px 150px 150px;
+  gap: 20px;
+  justify-items: center;
+}
+
+.description {
+  grid-column: 2/3;
+}
+
+.ingredients {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.preparation {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+/* Maybe you would also like */
+.maybeYouWouldAlsoLike {
+  background: url(../img/lightGreenWawe.svg);
+  height: 500px;
+  position: relative;
+}
+
+.maybeYouWouldAlsoLike h4 {
+  margin-top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-family: "open sans";
+  font-size: 1.2rem;
+}
+
+.maybeYouWouldAlsoLike article {
+  display: flex;
+  justify-content: center;
+}
+
+.maybeYouWouldAlsoLike a img {
+  margin-top: 190px;
+  width: 300px;
+  height: 200px;
+  margin-inline: 5px;
+}
+
+/* footer */
+footer {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--darkGreen);
+  padding-block: 50px;
 }
