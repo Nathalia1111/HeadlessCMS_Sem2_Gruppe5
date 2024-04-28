@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- KILDE: https://cdnjs.com/libraries/font-awesome. cdnjs. 2024. Accessed 26/04/24  -->
+  <!-- KILDE: Sofya Bolotina, https://cdnjs.com/libraries/font-awesome. cdnjs. 2024. Accessed 26/04/24  -->
   <script src="./assets/js/functions.js" defer></script>
   <script src="./assets/js/mainPage.js" defer></script>
   <script src="./assets/js/recipes.js" defer></script>
@@ -19,56 +19,64 @@
 </head>
 <body>
   <header id="headerMealPlans">
+    <nav>
+      <!-- OBS -->
+    </nav>
     <h1>Meal Plans</h1>
-    <p class="breadcrumbsMealPlans">Recipes > Families</p>
   </header>
   <main>
     <img src="./assets/img/whiteWaweNEW.svg" alt="white wawe" width="1920" id="whiteWawe"/>
-    <h2 id="overviewTitle">Overview of all our meal plans</h2>
+    <p class="breadcrumbsMealPlans">Meal plans > overview of all meal plans</p>
+    <h2 id="overviewTitle"> Overview of all our meal plans</h2>
     <sektion class="mealPlansOverview">
       <div class="oneMealPlan">
         <p>Budget</p>
         <img src="./assets/img/budgetPlateNEW.png" alt="budget meal plan" width="200">
+        <!-- KILDE: #228088, https://www.colourbox.dk/billede/paneret-koed-maaltid-billede-60081194. Colourbox.dk, 2024. -->
       </div>
       <div class="oneMealPlan">
         <p>Family</p>
         <img src="./assets/img/familyPlate.png" alt="Family meal plan" width="315">
+        <!-- KILDE: #1560, https://www.colourbox.dk/billede/boern-kartoffelmos-tallerken-billede-36878699. Colourbox.dk, 2024 -->
       </div>
       <div class="oneMealPlan">
         <p>Vegetarian</p>
         <img src="./assets/img/vegetarianPlate.png" alt="Vegetarian meal plan" width="315">
+        <!-- KILDE: Sea Wave, https://www.colourbox.dk/billede/mad-sund-salat-billede-54404210. Colourbox.dk. 2024 -->
       </div>
       <div class="oneMealPlan">
         <p>Gluten free</p>
         <img src="./assets/img/glutenfreePlate.png" alt="Gluten free meal plan" width="315">
+        <!-- KILDE: Sea Wave, https://www.colourbox.dk/billede/laks-loeg-gourmet-billede-55119994. Colourbox.dk. 2024 -->
       </div>
     </sektion>
     <section class="thisWeek">
       <h2>This week's meal plan</h2>
       <div class="containerMealPlan">
         <div class="weekMealPlan">
-          <img src=" " alt=" ">
           <p>Monday</p>
-        </div>
+          <div class="WPData"></div>
+      </div>
         <div class="weekMealPlan">
-          <img src=" " alt=" ">
           <p>Thuesday</p>
+          <div class="WPData"></div>
         </div>
         <div class="weekMealPlan">
-          <img src=" " alt=" ">
           <p>Wednesday</p>
+          <div class="WPData"></div>
         </div>
         <div class="weekMealPlan">
-          <img src=" " alt=" ">
           <p>Thursday</p>
+          <p class="WPData"></p>
         </div>
         <div class="weekMealPlan">
-          <img src=" " alt=" ">
           <p>Friday</p>
+          <p class="WPData"></p>
         </div>
       </div>
       <button class="btnShoppinglist">
-      <i class="fa-solid fa-cart-shopping"></i> <!-- KILDE: https://fontawesome.com/icons/cart-shopping?f=classic&s=solid. 2022. Fonticons, Inc. -->
+      <i class="fa-solid fa-cart-shopping"></i> 
+      <!-- KILDE: https://fontawesome.com/icons/cart-shopping?f=classic&s=solid. 2022. Fonticons, Inc. -->
       Add ingrediens to shoppinglist
       </button>
     </section>

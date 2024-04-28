@@ -23,11 +23,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+}
+
+#headerMealPlans h1 {
+  text-align: center;
 }
 
 .breadcrumbsMealPlans {
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 40px;
 }
 
 #whiteWawe {
@@ -38,14 +42,14 @@
 #overviewTitle {
 margin-top: 2rem;
 position: relative;
-left: 40%;
+text-align: center;
 }
 
 .mealPlansOverview {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 60px 30px;
+  margin: 60px;
 }
 
 .oneMealPlan {
@@ -76,11 +80,16 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 30px;
 }
 
 .weekMealPlan {
-padding: 60px;
+padding: 20px;
+text-align: center;
+}
+
+.WPImg {
+  width: 220px;
+  height: 180px;
 }
 
 .btnShoppinglist {
