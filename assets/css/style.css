@@ -12,3 +12,24 @@
   margin: 0;
   padding: 0;
 }
+
+
+/* filters */
+
+.filters {
+  position: relative;
+}
+
+.filters select {
+  background-color: #F4AB34;
+  border: unset;
+  padding-top: 1rem;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+
+
+
+
+/* filters slut */
