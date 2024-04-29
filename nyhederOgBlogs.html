@@ -13,5 +13,144 @@
     <script src="./assets/js/madplaner.js" defer></script>
     <script src="./assets/js/nyhederOgBlogs.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFiesta - Opskrifter</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/js/functions.js" defer></script>
+    <script src="./assets/js/opskrifter.js" defer></script>
+   
+    
+  </head>
+  <body>
+    <header>
+      <header>
+        <!-- <p class="logo">FoodFiesta</p>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home page</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li><a href="./mealPlans.html">Meal plans</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+          </ul>
+        </nav>
+        <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
+      </header> -->
+    </header>
+    <main>
+      <div class="heroPicture">
+        <h1>Recipes</h1>
+        <div class="search">
+          <p>Search...</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="newestRecipes">
+        <h2 class="headlineNewRecipes">New Recipes</h2>
+        <div class="thisWeek">
+        </div>
+      </div>
+
+  
+      <button class="filterBtn">Filters <i class="fa-solid fa-filter"></i></button>
+
+      <section class="filters">
+          <select name="cookingTime" id="cookingTime">
+            <option value="default" disabled selected>Cooking Time</option>
+            <option value="Fast">Fast</option>
+            <option value="Medium">Medium</option>
+            <option value="Slow">Slow</option>
+          </select>
+
+        <select name="cookingMethod" id="cookingMethod">
+          <option value="default" disabled selected>Cooking Method</option>
+          <option value="Airfryer">Airfryer</option>
+          <option value="Grill">Grill</option>
+          <option value="Other">Other</option>
+          <option value="Oven">Oven</option>
+          <option value="Stove">Stove</option>
+        </select>
+
+        <select name="cuisines" id="cuisines">
+          <option value="default" disabled selected>Cuisine</option>
+          <option value="American">American</option>
+          <option value="British">British</option>
+          <option value="Chinese">Chinese</option>
+          <option value="French">French</option>
+          <option value="Greek">Greek</option>
+          <option value="Italian">Italian</option>
+          <option value="Mexican">Mexican</option>
+        </select>
+
+        <select name="diet" id="diet">
+          <option value="default" disabled selected>Diet Preferences</option>
+          <option value="Carnivore">Carnivore</option>
+          <option value="Flexitarian">Flexitarian</option>
+          <option value="Keto">Keto</option>
+          <option value="Pescatarian">Pescatarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Vegetarian">Vegetarian</option>
+        </select>
+
+        <select name="holidays" id="holidays">
+          <option value="default" disabled selected>Holidays</option>
+          <option value="Christmas">Christmas</option>
+          <option value="Easter">Easter</option>
+          <option value="Halloween">Halloween</option>
+          <option value="Thanksgiving">Thanksgiving</option>
+        </select>
+    
+        <select name="nutritionalFocus" id="nutritionalFocus">
+          <option value="default" disabled selected>Nutritional Focus</option>
+          <option value="Glutenfree">Gluten free</option>
+          <option value="High fiber">High fiber</option>
+          <option value="High protein">High protein</option>
+          <option value="Low Carb">Low carb</option>
+          <option value="Low fat">Low fat</option>
+          <option value="Sugarfree">Sugar free</option>
+        </select>
+
+        <select name="timeOfYear" id="timeOfYear">
+          <option value="default" disabled selected>Time of Year</option>
+          <option value="Spring">Spring</option>
+          <option value="Summer">Summer</option>
+          <option value="Fall">Fall</option>
+          <option value="Winter">Winter</option>
+        </select>
+
+        <select name="dinnerCourse" id="dinnerCourse">
+          <option value="default" disabled selected>Type of course</option>
+          <option value="Appetizer">Appetizer</option>
+          <option value="MainCourse">Main course</option>
+          <option value="Dessert">Dessert</option>
+        </select>
+
+        <select name="typeOfMeal" id="typeOfMeal">
+          <option value="default" disabled selected>Type of Meal</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Brunch">Brunch</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Snack">Snack</option>
+        </select>
+      </section>
+      <button class="searchFilter">Start Search</button>
+      <button class="resetFilter">Reset Filters</button>
+      <section class="recipeIndex"></section>
+</main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
+
+  </body>
 </html>
