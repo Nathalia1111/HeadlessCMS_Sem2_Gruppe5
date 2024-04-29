@@ -9,6 +9,8 @@
   --limeGreen: hsl(80, 99%, 36%);
   --orange: hsl(45, 85%, 67%);
   --darkOrange: hsl(22, 87%, 59%);
+  --standardSize: 1rem;
+  --titles: 1.2rem;
 }
 
 * {
@@ -17,15 +19,28 @@
   padding: 0;
 }
 
+.logo,
+h1 {
+  font-family: "Ubuntu";
+}
+
 a,
 p,
-h3 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "open sans";
+}
+
+h3 {
+  font-size: var(--titles);
 }
 
 /* ---Recipe--- */
 /* Navigation */
-.logo {
+/* .logo {
   color: var(--darkGreen);
   font-weight: 600;
   font-family: "Ubuntu";
@@ -63,6 +78,50 @@ nav ul {
 nav li {
   display: inline-block;
   margin-inline: 10px;
+} */
+
+.logo {
+  color: var(--darkGreen);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--green);
+}
+
+nav ul a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: var(--standardSize);
+}
+
+.login {
+  padding: 20px;
+}
+
+.login i {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 20px;
 }
 
 /* Hero img */
@@ -72,7 +131,7 @@ nav li {
   width: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  top: 45%;
+  top: 50%;
 }
 
 .hero {
@@ -93,7 +152,7 @@ nav li {
   border-radius: 50px;
   border: none;
   background-color: rgba(255, 255, 255, 0.692);
-  font-size: 1.1rem;
+  font-size: var(--standardSize);
   padding-block: 15px;
   padding-left: 20px;
   color: var(--blueishBlack);
@@ -103,7 +162,6 @@ nav li {
 
 .title {
   color: var(--darkOrange);
-  font-family: "Ubuntu";
   margin-top: 40px;
   text-shadow: 3px 3px 4px hsla(0, 0%, 11%, 0.237);
 }
@@ -117,26 +175,16 @@ nav li {
   font-size: 3.5rem;
 }
 
-/* Recipe */
-.recipe {
+/* General information about the recipe */
+.recipeInformation {
   position: relative;
   z-index: 1;
   display: flex;
 }
 
-.recipe div {
+.recipeInformation div {
   display: flex;
   justify-content: space-around;
-}
-
-.information img {
-  width: 500px;
-  height: 300px;
-}
-
-.information {
-  margin-inline: 15vw;
-  margin-bottom: 30px;
 }
 
 .links {
@@ -153,32 +201,70 @@ nav li {
   margin-left: 30px;
 }
 
-/* other recipe section */
-#informationBox {
-  width: 300px;
+.recipeData {
+  margin-inline: 15vw;
+  margin-bottom: 30px;
+}
+
+.recipeData img {
+  width: 500px;
   height: 300px;
+}
+
+/* the recipe */
+#informationBox {
+  width: 335px;
+  height: 325px;
   border-radius: 30px;
   background-color: var(--orange);
+  padding: 10px;
 }
 
 #informationBox button {
   background-color: var(--darkOrange);
   border-style: none;
+  padding-block: 7px;
   border-radius: 20px;
+  font-size: var(--standardSize);
 }
 
 #informationBox button:nth-of-type(1) {
-  padding-inline: 70px;
-  padding-block: 7px;
+  padding-inline: 80px;
   margin-bottom: 20px;
 }
 
 #informationBox button:nth-of-type(2) {
   padding-inline: 30px;
-  padding-block: 7px;
 }
 
-.recipeSecondSection {
+#informationBox button i {
+  font-size: 1.4rem;
+}
+
+.publishingInformation {
+  display: flex;
+  align-items: center;
+  margin-block: 30px;
+  margin-inline: 20px;
+}
+
+.publishingInformation i {
+  font-size: 1.8rem;
+}
+
+.publishingInformation i:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.publishingInformation i:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.publishingInformation div {
+  font-size: 0.9rem;
+}
+
+.theRecipe {
   display: grid;
   grid-template-columns: 250px 1fr 1fr 250px;
   grid-template-rows: 150px 150px 150px;
@@ -200,28 +286,27 @@ nav li {
   grid-row: 3/4;
 }
 
-/* Maybe you would also like */
-.maybeYouWouldAlsoLike {
+/* Suggestions for other recipes */
+.recipeSuggestions {
   background: url(../img/lightGreenWawe.svg);
   height: 500px;
   position: relative;
 }
 
-.maybeYouWouldAlsoLike h4 {
+.recipeSuggestions h4 {
   margin-top: 130px;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  font-family: "open sans";
-  font-size: 1.2rem;
+  font-size: var(--titles);
 }
 
-.maybeYouWouldAlsoLike article {
+.recipeSuggestions article {
   display: flex;
   justify-content: center;
 }
 
-.maybeYouWouldAlsoLike a img {
+.recipeSuggestions a img {
   margin-top: 190px;
   width: 300px;
   height: 200px;
