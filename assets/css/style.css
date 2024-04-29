@@ -18,16 +18,16 @@
 
 
 
-.heroPicture {
+.heroPictureSection {
   height: 486px;
   width: 100%;
-  background-image: url(../img/COLOURBOX52673515.jpg);
+  background-image: url(../img/COLOURBOX39631047.jpg);
   background-size: cover;
   object-fit: cover;
   position: relative;
 }
 
-.heroPicture img {
+.heroPictureSection img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -45,10 +45,10 @@ h5 {
   font-family: "Ubuntu", sans-serif;
 }
 
-.heroPicture h1 {
+.heroPictureSection h1 {
   position: absolute;
-  top: 45%;
-  left: 15%;
+  top: 30%;
+  left: 10%;
   color: var(--darkOrange);
   font-size: 100px;
 }
@@ -72,8 +72,8 @@ h5 {
   font-size: 30px;
 }
 
-.newestRecipes {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="722.508" viewBox="0 0 1922 722.508"><path id="Path_10" data-name="Path 10" d="M0,649.264s162.06-45.407,278.29-43.677c18.444.275,190.109,7.146,324.641,57.163,16.584,4.058,190.39,38.067,339.559,6.964,49.759-14.476,234.931-50.092,312.176-24.83,280.285,82.393,667.334,4.38,667.334,4.38V-27.741s-84.9,78.919-554.577,39.983C1252.351,2.7,1105.077-34.576,963.847-10.123,886.274,6.44,692.438,34.419,533.539,1.037,378.281-25.836,207.168-55.232,112.661-30.486,57.077-16.055,0-27.741,0-27.741Z" transform="translate(0 39.807)" fill="%2397bb87"/></svg>');
+.newestNews {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="722.508" viewBox="0 0 1922 722.508"><path id="Path_10" data-name="Path 10" d="M0,649.264s162.06-45.407,278.29-43.677c18.444.275,190.109,7.146,324.641,57.163,16.584,4.058,190.39,38.067,339.559,6.964,49.759-14.476,234.931-50.092,312.176-24.83,280.285,82.393,667.334,4.38,667.334,4.38V-27.741s-84.9,78.919-554.577,39.983C1252.351,2.7,1105.077-34.576,963.847-10.123,886.274,6.44,692.438,34.419,533.539,1.037,378.281-25.836,207.168-55.232,112.661-30.486,57.077-16.055,0-27.741,0-27.741Z" transform="translate(0 39.807)" fill="%23fff"/></svg>');
   height: 770px;
   background-size: cover;
   position: relative;
@@ -82,139 +82,37 @@ h5 {
   justify-content: center;
 }
 
-.headlineNewRecipes {
-  position: absolute;
-  left: 110px;
-  top: 120px;
+.headlineNews,
+.headlineblogposts {
   font-size: 50px;
+  margin-top: 100px;
 }
 
-.thisWeek {
+.freshNews {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-
 }
 
-.newRecipe {
+.newNews {
   margin: 6rem 0rem;
   text-align: center;
   font-size: 20px;
 }
 
-
-
-.newRecipe img {
+.newNews img {
   width: 315px;
   height: 292px;
   object-fit: cover;
 }
 
-.filterBtn {
-  width: 190px;
-  font-size: 25px;
-  background-color: #F4AB34;
-  border: none;
-  border-radius: 10px;
-  margin-left: 2.5rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.filterBtn:hover {
-  background-color: var(--darkOrange);
-}
-
-.filters {
-  display: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.show {
+.newblogs {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="860.173" viewBox="0 0 1920 860.173"><path id="Path_6" data-name="Path 6" d="M0,0S161.891,54.059,278,52c18.425-.327,189.911-8.508,324.3-68.054,16.567-4.832,190.192-45.32,339.206-8.291C991.216-7.112,1176.2,35.29,1253.361,5.215,1533.354-92.877,1920,0,1920,0V806s-84.81-93.957-554-47.6c-114.952,11.357-262.073,55.739-403.156,26.628C885.352,765.306,691.717,732,532.984,771.739c-155.1,31.993-326.031,66.991-420.44,37.53C57.017,792.087,0,806,0,806Z" transform="translate(0 39.807)" fill="%23f2cf63"/></svg>');
+  height: 770px;
+  background-size: cover;
+  position: relative;
+  top: -70px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.filters select {
-  background-color: #F4AB34;
-  border: unset;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.filters select:active {
-  margin-top: 3rem;
-}
-
-.searchFilter,
-.resetFilter {
-  display: none;
-}
-
-.searchFilterShow {
-  width: 190px;
-  font-size: 25px;
-  background-color: var(--green);
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  display: unset;
-  margin-left: 39%;
-  margin-top: 3rem;
-}
-
-.resetFilterShow {
-  width: 190px;
-  font-size: 25px;
-  background-color: rgb(205, 105, 105);
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  display: unset;
-  margin-left: 2rem;
-  margin-top: 3rem;
-}
-
-.searchFilter:hover {
-  background-color: var(--darkGreen);
-  color: white;
-  cursor: pointer;
-}
-
-.resetFilter:hover {
-  background-color: rgb(108, 46, 46);
-  color: white;
-  cursor: pointer;
-}
-
-.recipeIndex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.recipeForm {
-  width: 540px;
-  height: 509px;
-  text-align: center;
-  font-size: 25px;
-}
-
-.recipeForm img {
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
 }
