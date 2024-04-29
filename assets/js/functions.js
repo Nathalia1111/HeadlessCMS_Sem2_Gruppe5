@@ -7,8 +7,7 @@ function renderAllrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="recipeForm">
-        <img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}">
-        <h3>${recipe.acf.title}</h3>
+        <a href="#"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}"> <p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -19,8 +18,7 @@ function renderNewrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="newRecipe">
-        <img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}">
-        <a href="">${recipe.acf.title}</a>
+        <a href="#"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}"><p>${recipe.acf.title}</p></a>
         </div>
         `
     });
