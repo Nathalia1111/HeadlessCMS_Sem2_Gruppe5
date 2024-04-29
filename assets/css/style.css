@@ -15,18 +15,60 @@
   padding: 0;
 }
 
+.logo {
+  color: var(--darkGreen);
+  font-weight: 600;
+  font-family: "Ubuntu";
+  font-size: 30px;
+}
+ 
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+ 
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--green);
+}
+ 
+nav ul a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: 1.2rem;
+}
+ 
+.login {
+  padding: 20px;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 20px;
+}
+
 /* Meal plans START */
+
 #headerMealPlans {
   background-image: url(../img/COLOURBOX41284258.jpg); 
   /* KILDE: https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
-  height: 450px;
+  height: 380px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #headerMealPlans h1 {
   text-align: center;
+  padding-top: 80px;
 }
 
 .breadcrumbsMealPlans {
@@ -98,6 +140,7 @@ border: var(--darkOrange);
 border-radius: 40px;
 padding: 10px 20px;
 width: 300px;
+margin-top: 20px;
 }
 
 .btnShoppinglist:hover {  

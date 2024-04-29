@@ -11,40 +11,46 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- KILDE: Sofya Bolotina, https://cdnjs.com/libraries/font-awesome. cdnjs. 2024. Accessed 26/04/24  -->
   <script src="./assets/js/functions.js" defer></script>
-  <script src="./assets/js/mainPage.js" defer></script>
-  <script src="./assets/js/recipes.js" defer></script>
-  <script src="./assets/js/recipe.js" defer></script>
   <script src="./assets/js/mealPlans.js" defer></script>
-  <script src="./assets/js/newsAndBlogs.js" defer></script>
 </head>
 <body>
-  <header id="headerMealPlans">
+  <header>
+    <p class="logo">FoodFiesta</p>
     <nav>
-      <!-- OBS -->
+      <ul>
+        <li><a href="./index.html">Home page</a></li>
+        <li><a href="./recipes.html">Recipes</a></li>
+        <li><a href="./mealPlans.html">Meal plans</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+      </ul>
     </nav>
-    <h1>Meal Plans</h1>
+    <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
   </header>
+  <div id="headerMealPlans">
+    <h1>Meal Plans</h1>
+  </div>
   <main>
     <img src="./assets/img/whiteWaweNEW.svg" alt="white wawe" width="1920" id="whiteWawe"/>
     <p class="breadcrumbsMealPlans">Meal plans > overview of all meal plans</p>
     <h2 id="overviewTitle"> Overview of all our meal plans</h2>
     <sektion class="mealPlansOverview">
-      <div class="oneMealPlan">
+      <div class="oneMealPlan budget">
         <p>Budget</p>
         <img src="./assets/img/budgetPlateNEW.png" alt="budget meal plan" width="200">
         <!-- KILDE: #228088, https://www.colourbox.dk/billede/paneret-koed-maaltid-billede-60081194. Colourbox.dk, 2024. -->
       </div>
-      <div class="oneMealPlan">
+      <div class="oneMealPlan family">
         <p>Family</p>
         <img src="./assets/img/familyPlate.png" alt="Family meal plan" width="315">
         <!-- KILDE: #1560, https://www.colourbox.dk/billede/boern-kartoffelmos-tallerken-billede-36878699. Colourbox.dk, 2024 -->
       </div>
-      <div class="oneMealPlan">
+      <div class="oneMealPlan vegetarian">
         <p>Vegetarian</p>
         <img src="./assets/img/vegetarianPlate.png" alt="Vegetarian meal plan" width="315">
         <!-- KILDE: Sea Wave, https://www.colourbox.dk/billede/mad-sund-salat-billede-54404210. Colourbox.dk. 2024 -->
       </div>
-      <div class="oneMealPlan">
+      <div class="oneMealPlan glutenfree">
         <p>Gluten free</p>
         <img src="./assets/img/glutenfreePlate.png" alt="Gluten free meal plan" width="315">
         <!-- KILDE: Sea Wave, https://www.colourbox.dk/billede/laks-loeg-gourmet-billede-55119994. Colourbox.dk. 2024 -->
@@ -52,6 +58,7 @@
     </sektion>
     <section class="thisWeek">
       <h2>This week's meal plan</h2>
+      <h3 id="mealPlanTitle">Family Meal Plan</h3>
       <div class="containerMealPlan">
         <div class="weekMealPlan">
           <p>Monday</p>
