@@ -123,6 +123,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .filterBtn:hover {
@@ -149,13 +150,15 @@ h5 {
   padding: 10px;
   border-radius: 10px;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .filters select:active {
   margin-top: 3rem;
 }
 
-.searchFilter {
+.searchFilter,
+.resetFilter {
   display: none;
 }
 
@@ -167,13 +170,32 @@ h5 {
   border-radius: 10px;
   padding: 10px;
   display: unset;
-  margin-left: 45%;
+  margin-left: 39%;
+  margin-top: 3rem;
+}
+
+.resetFilterShow {
+  width: 190px;
+  font-size: 25px;
+  background-color: rgb(205, 105, 105);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: unset;
+  margin-left: 2rem;
   margin-top: 3rem;
 }
 
 .searchFilter:hover {
   background-color: var(--darkGreen);
   color: white;
+  cursor: pointer;
+}
+
+.resetFilter:hover {
+  background-color: rgb(108, 46, 46);
+  color: white;
+  cursor: pointer;
 }
 
 .recipeIndex {
