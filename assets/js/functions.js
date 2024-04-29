@@ -20,8 +20,7 @@ function renderNews(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newNews">
-        <img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}">
-        <a href="#">${story.acf.titel}</a>
+        <a href="#"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
         </div>
         `
     });
@@ -32,8 +31,7 @@ function renderPosts(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newPosts">
-            <img src="${story.acf.image_1.sizes.large}" alt="${story.acf.image_1.alt}">
-            <a href="#">${story.acf.title}</a>
+            <a href="#"><img src="${story.acf.image_1.sizes.large}" alt="${story.acf.image_1.alt}"><p>${story.acf.title}</p></a>
             </div>
             `
     });

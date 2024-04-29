@@ -89,18 +89,23 @@ h5 {
 .freshNews {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
+  align-items: flex-start;
 }
 
 .newNews a {
-  width: 25ch;
+  width: 350px;
   display: block;
   font-size: 25px;
   text-decoration: none;
   color: black;
   cursor: pointer;
   font-weight: bold;
+  transition: ease-out 250ms;
+}
+
+.newNews a:hover {
+  scale: 1.1;
+  transition: ease-out 500ms;
 }
 
 .newestNews {
@@ -112,8 +117,8 @@ h5 {
   gap: 4rem;
 }
 
-.newNews img {
-  width: 350px;
+.newNews a img {
+  width: 100%;
   height: 300px;
   object-fit: cover;
 }
@@ -145,6 +150,12 @@ h5 {
   color: black;
   cursor: pointer;
   font-weight: bold;
+  transition: ease-out 250ms;
+}
+
+.newPosts a:hover {
+  scale: 1.1;
+  transition: ease-out 500ms;
 }
 
 .freshPosts img {
