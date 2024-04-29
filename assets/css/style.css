@@ -95,7 +95,7 @@ h5 {
   justify-content: space-around;
   align-items: flex-start;
   height: 500px;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .newRecipe {
@@ -116,6 +116,14 @@ h5 {
   cursor: pointer;
   font-weight: bold;
   width: 300px;
+  transition: ease-out 250ms;
+}
+
+
+.newRecipe a:hover,
+.recipeForm:hover {
+  scale: 1.1;
+  transition: ease-out 250ms;
 }
 
 
@@ -216,7 +224,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   margin-top: 2rem;
 }
 
@@ -225,6 +233,7 @@ h5 {
   height: 509px;
   text-align: center;
   font-size: 25px;
+  transition: ease-out 250ms;
 }
 
 .recipeForm img {
