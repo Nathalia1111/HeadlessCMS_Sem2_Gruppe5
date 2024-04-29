@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/functions.js" defer></script>
     <script src="./assets/js/forside.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <p class="logo">FoodFiesta</p>
+      <a class="logo" href="./index.html">
+        <img class="logo" src="./assets/img/foodfiestaLogo.svg" alt=""
+      /></a>
       <nav>
         <ul>
           <li><a href="./index.html">Home page</a></li>
@@ -25,6 +35,23 @@
     </header>
 
     <main>
+      <section class="hero">
+        <article>
+          <img class="title" src="./assets/img/foodfiestaOrange.svg" alt="" />
+          <input class="searchbar" type="text" placeholder="Search... " />
+        </article>
+      </section>
+      <div class="wave"></div>
+
+      <section class="newestRecipes">
+        <h2>Newest recipes</h2>
+        <img src="./assets/img/COLOURBOX50676926.jpg" alt="" />
+        <img src="./assets/img/COLOURBOX50676926.jpg" alt="" />
+        <img src="./assets/img/COLOURBOX50676926.jpg" alt="" />
+
+        <button>See more recipes</button>
+      </section>
+
       <section class="thisWeek">
         <h2>Meal plan</h2>
         <div class="containerMealPlan">
@@ -44,11 +71,30 @@
             <p class="WPData"></p>
           </div>
         </div>
-        <button class="btnShoppinglist">
-          <i class="fa-solid fa-cart-shopping"></i>
+        <button class="mealplanBtn">
           <!-- KILDE: https://fontawesome.com/icons/cart-shopping?f=classic&s=solid. 2022. Fonticons, Inc. -->
           Go to mealplan
         </button>
+      </section>
+
+      <section class="news">
+        <h2>News</h2>
+        <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+        <button>See other news</button>
+      </section>
+
+      <section class="newsletter">
+        <h2>Be the first to recieve news from FoodFiesta</h2>
+
+        <article class="newsletterSignUp">
+          <form action="active">
+            <input type="text" placeholder="Name..." /><br />
+            <input type="text" placeholder="Phone number..." /><br />
+            <input type="text" placeholder="Mail..." /><br />
+          </form>
+        </article>
+
+        <button>Sign up for the newsletter</button>
       </section>
     </main>
   </body>
