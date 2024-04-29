@@ -3,15 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodFiesta - Main page</title>
+    <title>FoodFiesta - Forside</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/functions.js" defer></script>
-    <script src="./assets/js/mainPage.js" defer></script>
-    <script src="./assets/js/recipes.js" defer></script>
-    <script src="./assets/js/recipe.js" defer></script>
-    <script src="./assets/js/mealPlans.js" defer></script>
-    <script src="./assets/js/newsAndBlogs.js" defer></script>
+    <script src="./assets/js/forside.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <p class="logo">FoodFiesta</p>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home page</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./mealPlans.html">Meal plans</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+        </ul>
+      </nav>
+      <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
+    </header>
+
+    <main>
+      <section class="thisWeek">
+        <h2>Meal plan</h2>
+        <div class="containerMealPlan">
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <p class="WPData"></p>
+          </div>
+          <div class="weekMealPlan">
+            <p class="WPData"></p>
+          </div>
+        </div>
+        <button class="btnShoppinglist">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <!-- KILDE: https://fontawesome.com/icons/cart-shopping?f=classic&s=solid. 2022. Fonticons, Inc. -->
+          Go to mealplan
+        </button>
+      </section>
+    </main>
+  </body>
 </html>

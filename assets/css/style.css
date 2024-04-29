@@ -14,3 +14,76 @@
   margin: 0;
   padding: 0;
 }
+
+/* ---Main Page--- */
+/* Navigation */
+.logo {
+  color: var(--darkGreen);
+  font-weight: 600;
+  font-family: "Ubuntu";
+  font-size: 30px;
+}
+
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--green);
+}
+
+nav ul a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: 1.2rem;
+}
+
+.login {
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 20px;
+}
+
+/* Yellow wave section */
+.thisWeek {
+  background-image: url(../img/yellowWawe.svg);
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMealPlan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.weekMealPlan {
+  padding: 20px;
+  text-align: center;
+}
+
+.WPImg {
+  width: 220px;
+  height: 180px;
+}
