@@ -60,7 +60,7 @@ nav li {
 
 #headerMealPlans {
   background-image: url(../img/COLOURBOX41284258.jpg); 
-  /* KILDE: https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
+  /* KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
   height: 380px;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,6 +74,7 @@ nav li {
 .breadcrumbsMealPlans {
   font-size: 15px;
   margin-top: 40px;
+  margin-left: 100px;
 }
 
 #whiteWawe {
@@ -94,6 +95,10 @@ text-align: center;
   margin: 60px;
 }
 
+.mealPlansOverview img {
+  opacity: 0.5;
+}
+
 .oneMealPlan {
 display: flex;
 flex-direction: column;
@@ -101,9 +106,9 @@ align-items: center;
 justify-content: center;
 }
 
-.oneMealPlan:hover {
+/* .oneMealPlan:hover {
   color: var(--darkOrange);
-}
+} */
 
 .thisWeek {
 background-image: url(../img/yellowWawe.svg);
@@ -148,17 +153,24 @@ margin-top: 20px;
 } 
 
 .previousMealPlans {
-margin-top: 60px;
-margin-bottom: 60px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.previousMealPlanContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 20px auto;
 }
 
 .weekMealPlan:hover {
   color: var(--darkOrange);
 }
+
 
 
 /* Meal plans SLUT */
