@@ -441,7 +441,7 @@ footer {
   padding-block: 50px;
 }
 
-footer {
+.specielFooter {
   background-color: var(--green);
   display: flex;
   justify-content: space-around;
