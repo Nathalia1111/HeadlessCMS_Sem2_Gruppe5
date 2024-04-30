@@ -656,3 +656,198 @@ footer {
 }
 
 /* Style for opskrifter slut */
+
+/* Nyheder og blogs */
+
+.heroPictureSection {
+  height: 486px;
+  width: 100%;
+  background-image: url(../img/COLOURBOX39631047.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heroPictureSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.heroPictureSection h1 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: var(--darkOrange);
+  font-size: 100px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 315px;
+  height: 67px;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 0.59);
+  padding: 20px 30px;
+  position: relative;
+  top: 15%;
+  left: 75%;
+}
+
+.search p,
+.search i {
+  font-size: 30px;
+}
+
+.newestNews {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="722.508" viewBox="0 0 1922 722.508"><path id="Path_10" data-name="Path 10" d="M0,649.264s162.06-45.407,278.29-43.677c18.444.275,190.109,7.146,324.641,57.163,16.584,4.058,190.39,38.067,339.559,6.964,49.759-14.476,234.931-50.092,312.176-24.83,280.285,82.393,667.334,4.38,667.334,4.38V-27.741s-84.9,78.919-554.577,39.983C1252.351,2.7,1105.077-34.576,963.847-10.123,886.274,6.44,692.438,34.419,533.539,1.037,378.281-25.836,207.168-55.232,112.661-30.486,57.077-16.055,0-27.741,0-27.741Z" transform="translate(0 39.807)" fill="%23fff"/></svg>');
+  height: 770px;
+  background-size: cover;
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+}
+
+.headlineNews,
+.headlineblogposts {
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+.freshNews {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.newNews a {
+  width: 350px;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: ease-out 250ms;
+}
+
+.newNews a:hover {
+  scale: 1.1;
+  transition: ease-out 500ms;
+}
+
+.newestNews {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.newNews a img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.newblogs {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="860.173" viewBox="0 0 1920 860.173"><path id="Path_6" data-name="Path 6" d="M0,0S161.891,54.059,278,52c18.425-.327,189.911-8.508,324.3-68.054,16.567-4.832,190.192-45.32,339.206-8.291C991.216-7.112,1176.2,35.29,1253.361,5.215,1533.354-92.877,1920,0,1920,0V806s-84.81-93.957-554-47.6c-114.952,11.357-262.073,55.739-403.156,26.628C885.352,765.306,691.717,732,532.984,771.739c-155.1,31.993-326.031,66.991-420.44,37.53C57.017,792.087,0,806,0,806Z" transform="translate(0 39.807)" fill="%23f2cf63"/></svg>');
+  height: 900px;
+  background-size: cover;
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.freshPosts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.newPosts a {
+  width: 35ch;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: ease-out 250ms;
+}
+
+.newPosts a:hover {
+  scale: 1.1;
+  transition: ease-out 500ms;
+}
+
+.freshPosts img {
+  width: 536px;
+  height: 440px;
+  object-fit: cover;
+}
+
+.newestNews,
+.newblogs {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.newsletterForm {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="937.329" viewBox="0 0 1922 937.329"><path id="Path_10" data-name="Path 10" d="M0,3.571S162.06,62.479,278.29,60.234c18.444-.356,190.109-9.271,324.641-74.159C619.515-19.19,793.321-63.31,942.49-22.96c49.759,18.78,234.931,64.986,312.176,32.213C1534.951-97.638,1922,3.571,1922,3.571v878.3S1837.1,779.483,1367.423,830c-115.071,12.376-262.346,60.739-403.576,29.016-77.573-21.488-271.409-57.786-430.308-14.479-155.258,34.863-326.371,73-420.878,40.9C57.077,866.707,0,881.868,0,881.868Z" transform="translate(0 39.807)" fill="%2397bb87"/></svg>');
+  height: 770px;
+  background-size: cover;
+  position: relative;
+  top: -200px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletterForm form {
+  display: flex;
+  flex-direction: column;
+  width: 477px;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.newsletterForm h3 {
+  font-size: 40px;
+  margin-top: 5rem;
+}
+
+.newsletterForm form input {
+  height: 93px;
+  width: 477px;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.69);
+  font-size: 25px;
+}
+
+.newsletterForm button {
+  width: 386px;
+  height: 90px;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--darkOrange);
+  font-size: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.34);
+}
