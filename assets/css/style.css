@@ -18,7 +18,7 @@
 
 
 /* Style for opskrifter */
-.heroPicture {
+.heroPictures {
   height: 486px;
   width: 100%;
   background-image: url(../img/COLOURBOX52673515.jpg);
@@ -27,7 +27,7 @@
   position: relative;
 }
 
-.heroPicture img {
+.heroPictures img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -46,7 +46,7 @@ h5 {
   font-family: "Ubuntu", sans-serif;
 }
 
-.heroPicture h1 {
+.heroPictures h1 {
   position: absolute;
   top: 45%;
   left: 15%;
