@@ -1,4 +1,5 @@
 const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
+const recipeUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/posts/";
 let recipeData;
 
 function renderAllrecipes(containerToFill, recipes) {
@@ -7,7 +8,7 @@ function renderAllrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="recipeForm">
-        <a href="#"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}"> <p>${recipe.acf.title}</p></a>
+        <a href="opskrift.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}"> <p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -208,3 +209,17 @@ function restAllFilters() {
         .then(recipes => renderAllrecipes(recipeIndexEl, recipes))
         .catch(err => console.error("Fejl under hentning af opskrifter:", err));
 };
+
+function getOneRecipe() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const recipeId = urlParams.get('id');
+    return fetch(recipeUrl + recipeId)
+        .then((res) => res.json())
+        .then((recipes) => {
+            console.log(recipes)
+            recipeData = recipes;
+            return (recipes);
+        })
+        .catch(err => console.log("Fejl", err));
+}
