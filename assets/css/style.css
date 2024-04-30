@@ -45,6 +45,8 @@ button {
   padding-inline: 35px;
   border-radius: 30px;
   border-style: none;
+  font-size: var(--standardSize);
+  box-shadow: 3px 3px 4px hsla(0, 0%, 11%, 0.237);
 }
 
 /* ---Main Page--- */
@@ -135,9 +137,9 @@ nav li {
   left: 30%;
   transform: translate(-50%, -50%);
 }
+
 /* Newest recipes */
 .newestRecipes {
-  text-align: center;
   z-index: 1;
   position: relative;
   margin-top: 30px;
@@ -149,12 +151,17 @@ nav li {
 }
 
 .newestRecipes img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
 
 .newestRecipes button {
   margin-top: 30px;
+}
+
+.newestRecipes article {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Meal plan*/
@@ -167,7 +174,7 @@ nav li {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -189,23 +196,26 @@ nav li {
 
 /* News */
 .news h2 {
-  margin-bottom: 10px;
+  margin-block: 30px;
 }
 
 .news a img {
-  width: 300px;
-  height: 300px;
-  margin-right: 10px;
-}
-
-.smallerNews a img {
-  width: 200px;
-  height: 148px;
+  width: 550px;
+  height: 500px;
 }
 
 .news article {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.smallerNews a img {
+  width: 500px;
+  height: 223px;
+}
+
+.smallerNews a img:first-of-type {
+  margin-bottom: 50px;
 }
 
 .smallerNews {
@@ -216,7 +226,7 @@ nav li {
 /* Newsletter sign up */
 .newsletter {
   background-image: url(../img/lightGreenWawe.svg);
-  padding-block: 150px;
+  padding-block: 130px;
 }
 
 .newsletter,
@@ -241,3 +251,17 @@ nav li {
 }
 
 /* Footer */
+footer {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--darkGreen);
+  padding-block: 50px;
+}
+
+.btnLeft {
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+}
