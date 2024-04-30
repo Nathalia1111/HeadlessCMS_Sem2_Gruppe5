@@ -33,12 +33,9 @@ h6 {
   font-family: "open sans";
 }
 
-h3 {
-  font-size: var(--titles);
-}
-
 h2 {
   text-align: center;
+  font-weight: 500;
 }
 
 button {
@@ -191,19 +188,56 @@ nav li {
 }
 
 /* News */
+.news h2 {
+  margin-bottom: 10px;
+}
+
+.news a img {
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.smallerNews a img {
+  width: 200px;
+  height: 148px;
+}
+
+.news article {
+  display: flex;
+  justify-content: center;
+}
+
+.smallerNews {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Newsletter sign up */
 .newsletter {
   background-image: url(../img/lightGreenWawe.svg);
+  padding-block: 150px;
+}
+
+.newsletter,
+.newsletterSignUp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsLetterSignUpInput {
   background-color: rgba(255, 255, 255, 0.692);
   border-style: none;
-  border-radius: 30px;
-  padding-block: 10px;
-  padding-inline: 30px;
-  margin-top: 10px;
+  border-radius: 15px;
+  padding-block: 15px;
+  padding-inline: 35px;
+  margin-top: 15px;
+  font-size: var(--standardSize);
+}
+
+.signUpBtn {
+  margin-top: 15px;
 }
 
 /* Footer */
