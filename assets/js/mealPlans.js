@@ -24,7 +24,7 @@ getRecipeById(65);
 // Render posts in HTML
 function renderRecipebyId(recipe, index) {
     mealPlanEls[index].innerHTML += `
-    <a href="/recipe.html"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
+    <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
     <p class="WPData">${recipe.title.rendered}</p></a>
     `
 };
@@ -85,11 +85,11 @@ mealPlanContainers.forEach((mealPlanContainer) => {
         });
         mealPlanContainer.querySelector("img").style.opacity = '1.0';
         mealPlanContainer.querySelector("p").style.color = 'hsl(22, 87%, 59%)';
-        });
     });
+});
 
-    // åbne opskrift i recipe.html
-    // Finde frem til den enkelte opskrifts id 
-    // lave en eventlistener ("click") som skal åbne en recipe.html med opskriftens id som parameter, fx recipe.html?id=65
+// åbne opskrift i recipe.html
+// Finde frem til den enkelte opskrifts id
+// lave en eventlistener ("click") som skal åbne en recipe.html med opskriftens id som parameter, fx recipe.html?id=65
 
 
