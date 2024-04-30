@@ -38,6 +38,19 @@ h3 {
   font-size: var(--titles);
 }
 
+h2 {
+  text-align: center;
+}
+
+button {
+  background-color: var(--darkOrange);
+  color: var(--blueishBlack);
+  padding-block: 13px;
+  padding-inline: 35px;
+  border-radius: 30px;
+  border-style: none;
+}
+
 /* ---Main Page--- */
 /* Navigation */
 .logo {
@@ -144,6 +157,10 @@ nav li {
   height: 250px;
 }
 
+.newestRecipes button {
+  margin-top: 30px;
+}
+
 /* Meal plan*/
 .thisWeek {
   background-image: url(../img/yellowWawe.svg);
@@ -174,6 +191,15 @@ nav li {
   height: 180px;
 }
 
+/* News */
+
 /* Newsletter sign up */
-.newsletterSignUp .searchbar {
+.newsLetterSignUpInput {
+  background-color: rgba(255, 255, 255, 0.692);
+  border-style: none;
+  border-radius: 30px;
+  padding-block: 10px;
+  padding-inline: 30px;
 }
+
+/* Footer */
