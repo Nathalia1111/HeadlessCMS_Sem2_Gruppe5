@@ -6,7 +6,6 @@
   --darkGreen: hsl(155, 28%, 18%);
   --green: hsl(98, 34%, 55%);
   --lightGreen: hsl(102, 28%, 63%);
-  --limeGreen: hsl(80, 99%, 36%);
   --orange: hsl(45, 85%, 67%);
   --darkOrange: hsl(22, 87%, 59%);
   --standardSize: 1rem;
@@ -194,12 +193,17 @@ nav li {
 /* News */
 
 /* Newsletter sign up */
+.newsletter {
+  background-image: url(../img/lightGreenWawe.svg);
+}
+
 .newsLetterSignUpInput {
   background-color: rgba(255, 255, 255, 0.692);
   border-style: none;
   border-radius: 30px;
   padding-block: 10px;
   padding-inline: 30px;
+  margin-top: 10px;
 }
 
 /* Footer */
