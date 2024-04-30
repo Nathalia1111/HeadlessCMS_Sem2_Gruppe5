@@ -6,7 +6,6 @@
   --darkGreen: hsl(155, 28%, 18%);
   --green: hsl(98, 34%, 55%);
   --lightGreen: hsl(102, 28%, 63%);
-  --limeGreen: hsl(80, 99%, 36%);
   --orange: hsl(45, 85%, 67%);
   --darkOrange: hsl(22, 87%, 59%);
   --standardSize: 1rem;
@@ -34,9 +33,9 @@ h6 {
   font-family: "open sans";
 }
 
-h3 {
+/* h3 {
   font-size: var(--titles);
-}
+} */
 
 /* ---Recipe--- */
 /* Navigation */
