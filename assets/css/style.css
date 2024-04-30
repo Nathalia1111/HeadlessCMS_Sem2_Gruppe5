@@ -174,7 +174,6 @@ nav li {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -192,6 +191,11 @@ nav li {
 .WPImg {
   width: 220px;
   height: 180px;
+}
+
+.WPData {
+  color: var(--blueishBlack);
+  text-decoration: none;
 }
 
 /* News */
