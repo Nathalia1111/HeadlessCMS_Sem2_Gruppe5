@@ -20,7 +20,7 @@ function renderNewrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="newRecipe">
-        <a href="#"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}"><p>${recipe.acf.title}</p></a>
+        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}"><p>${recipe.acf.title}</p></a>
         </div>
         `
     });
