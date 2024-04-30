@@ -4,7 +4,6 @@
   --darkGreen: hsl(155, 28%, 18%);
   --green: hsl(98, 34%, 55%);
   --lightGreen: hsl(102, 28%, 63%);
-  --limeGreen: hsl(80, 99%, 36%);
   --orange: hsl(45, 85%, 67%);
   --darkOrange: hsl(22, 87%, 59%);
 }
@@ -13,47 +12,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.logo {
-  color: var(--darkGreen);
-  font-weight: 600;
-  font-family: "Ubuntu";
-  font-size: 30px;
-}
- 
-header .logo {
-  margin-right: auto;
-  margin-left: 15px;
-}
- 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: var(--green);
-}
- 
-nav ul a,
-.login {
-  text-decoration: none;
-  color: var(--darkGreen);
-  font-size: 1.2rem;
-}
- 
-.login {
-  padding: 20px;
-}
- 
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-nav li {
-  padding: 20px;
 }
 
 /* Meal plans START */
@@ -169,6 +127,7 @@ margin-top: 20px;
 
 .weekMealPlan a {
   text-decoration: none;
+  color: black;
 }
 
 /* Meal plans SLUT */

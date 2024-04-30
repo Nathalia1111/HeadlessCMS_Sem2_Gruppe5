@@ -4,8 +4,6 @@ const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
 const mealPlanEls = document.querySelectorAll(".weekMealPlan");
 const previousMealPlans = document.querySelector(".previousMealPlanContainer");
 
-
-
 // Functions (hente post fra wordpress efter specifik "tagId")
 
 function getRecipeById(tagId) {
@@ -22,7 +20,6 @@ function getRecipeById(tagId) {
         })
 };
 getRecipeById(65);
-
 
 // Render posts in HTML
 function renderRecipebyId(recipe, index) {
@@ -73,7 +70,6 @@ function mealPlanChanger(id, title) {
     titleOfMealPlan.innerHTML = title;
 };
 
-
 // ændre billedet opacity ved aktivt 
 const images = document.querySelectorAll(".mealPlansOverview img");
 const textColors = document.querySelectorAll(".mealPlansOverview p");
@@ -91,8 +87,6 @@ mealPlanContainers.forEach((mealPlanContainer) => {
         mealPlanContainer.querySelector("p").style.color = 'hsl(22, 87%, 59%)';
         });
     });
-
-
 
     // åbne opskrift i recipe.html
     // Finde frem til den enkelte opskrifts id 
