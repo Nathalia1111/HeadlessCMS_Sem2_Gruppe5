@@ -32,3 +32,33 @@ function renderRecipebyId(recipe, index) {
 getAmountOfNews(4, 95)
     .then(news => renderNews(freshNewsEl, news))
     .catch(err => console.error("Fejl under hentning af opskrifter:", err));
+
+function getAmountOfNews(amount, categoryId) {
+    return fetch(baseUrl + `posts?categories=${categoryId}&per_page=${amount}`)
+        .then((res) => res.json());
+}
+
+function renderNews(newsElements, newsData) {
+    newsData.forEach((article, index) => {
+        const newsEl = newsElements[index];
+        if (article) {
+            newsEl.innerHTML =`
+                <a href="/news/${article.slug}">
+                    <img src="${article.acf.image.url}" alt="${article.title.rendered}">
+                    <p class="newsTitle">${article.title.rendered}</p>
+                </a>
+                <div class="smallerNews">
+                <a href="/news/${article.slug}">
+                <img src="${article.acf.image.url}" alt="${article.title.rendered}">
+                <p class="newsTitle">${article.title.rendered}</p>
+            </a>
+            <a href="/news/${article.slug}">
+            <img src="${article.acf.image.url}" alt="${article.title.rendered}">
+            <p class="newsTitle">${article.title.rendered}</p>
+        </a>
+                </div>`;
+        }
+    });
+}
+
+
