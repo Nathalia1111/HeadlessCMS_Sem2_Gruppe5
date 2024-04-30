@@ -27,8 +27,8 @@ getRecipeById(65);
 // Render posts in HTML
 function renderRecipebyId(recipe, index) {
     mealPlanEls[index].innerHTML += `
-    <img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
-    <p class="WPData">${recipe.title.rendered}</p>
+    <a href="/recipe.html"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
+    <p class="WPData">${recipe.title.rendered}</p></a>
     `
 };
 
@@ -94,7 +94,8 @@ mealPlanContainers.forEach((mealPlanContainer) => {
 
 
 
+    // åbne opskrift i recipe.html
     // Finde frem til den enkelte opskrifts id 
     // lave en eventlistener ("click") som skal åbne en recipe.html med opskriftens id som parameter, fx recipe.html?id=65
-    
+
 

@@ -106,10 +106,6 @@ align-items: center;
 justify-content: center;
 }
 
-/* .oneMealPlan:hover {
-  color: var(--darkOrange);
-} */
-
 .thisWeek {
 background-image: url(../img/yellowWawe.svg);
 height: 650px;
@@ -171,6 +167,8 @@ margin-top: 20px;
   color: var(--darkOrange);
 }
 
-
+.weekMealPlan a {
+  text-decoration: none;
+}
 
 /* Meal plans SLUT */
