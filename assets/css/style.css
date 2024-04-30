@@ -438,6 +438,7 @@ footer {
   align-items: center;
   color: var(--darkGreen);
   padding-block: 50px;
+  margin-top: 90px;
 }
 
 
@@ -502,7 +503,7 @@ footer {
   font-size: 50px;
 }
 
-.thisWeek {
+.thisWeeks {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;

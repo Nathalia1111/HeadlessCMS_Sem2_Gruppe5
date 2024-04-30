@@ -227,7 +227,7 @@ function getOneRecipe() {
 // Start på recipies
 
 const recipeIndexEl = document.querySelector(".recipeIndex")
-const thisWeekEl = document.querySelector(".thisWeek")
+const thisWeekEl = document.querySelector(".thisWeeks")
 const resetFiltersBtn = document.querySelector(".resetFilter");
 
 
