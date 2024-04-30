@@ -7,11 +7,141 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/functions.js" defer></script>
-    <script src="./assets/js/mainPage.js" defer></script>
-    <script src="./assets/js/recipes.js" defer></script>
     <script src="./assets/js/recipe.js" defer></script>
-    <script src="./assets/js/mealPlans.js" defer></script>
-    <script src="./assets/js/newsAndBlogs.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <p class="logo">FoodFiesta</p>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home page</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./mealPlans.html">Meal plans</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+        </ul>
+      </nav>
+      <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
+    </header>
+    <main>
+      <section class="hero">
+        <article>
+          <div class="title">
+            <h1>Recipe</h1>
+            <h2>... ... ... .. Title ... ... ... ... ..</h2>
+          </div>
+          <input class="searchbar" type="text" placeholder="Search... " />
+        </article>
+      </section>
+      <div class="wave"></div>
+
+      <section class="recipeInformation">
+        <article class="links">
+          <a href="./recipes.html">Recipes</a>
+          <p>&gt;</p>
+          <a href="./recipe.html">recipe</a>
+        </article>
+
+        <article class="recipeData">
+          <img src="./assets/img/COLOURBOX34871532.jpg" alt="" />
+          <div>
+            <p><i class="fa-regular fa-clock"></i> Time</p>
+            <p>
+              <i class="fa-solid fa-people-group"></i> Servings
+              <i class="fa-solid fa-arrows-up-down"></i>
+            </p>
+            <p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i> Rating
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="theRecipe">
+        <article class="description">
+          <h3>Description</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            laborum perspiciatis corporis dolore inventore ea explicabo quidem
+            omnis suscipit iusto!
+          </p>
+        </article>
+
+        <article class="ingredients">
+          <h3>Ingredients</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            laborum perspiciatis corporis dolore inventore ea explicabo quidem
+            omnis suscipit iusto!
+          </p>
+        </article>
+
+        <article class="preparation">
+          <h3>Preparation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            laborum perspiciatis corporis dolore inventore ea explicabo quidem
+            omnis suscipit iusto!
+          </p>
+        </article>
+
+        <article id="informationBox">
+          <div class="publishingInformation">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <p>Author</p>
+              <p>Date</p>
+            </div>
+            <i class="fa-solid fa-share-from-square"></i>
+          </div>
+
+          <button>
+            <i class="fa-solid fa-toggle-on"></i> I'm in the kitchen
+          </button>
+          <br />
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add ingredients to
+            shopping list
+          </button>
+        </article>
+      </section>
+      <section class="recipeSuggestions">
+        <h4>Maybe you would also like...</h4>
+        <article>
+          <a href=""
+            ><img
+              src="./assets/img/eggOnToast.jpg"
+              alt="A toast with an egg topped with herbs"
+              loading="lazy"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/img/pieStuffedWithEggAndSpinach.jpg"
+              alt="a pie stuffed with boiled eggs, green onions, parsley, dill and spinach"
+              loading="lazy"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/img/filletWithSauceAndPotatoes.jpg"
+              alt="a fillet in a creamy sauce with boiled potatoes"
+              loading="lazy"
+          /></a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p class="logo">FoodFiesta</p>
+      <p><i class="fa-solid fa-envelope"></i> Contact_FoodFiesta@hello.com</p>
+      <p>Created by team 5 MMD-CSD-S23</p>
+    </footer>
+  </body>
 </html>
