@@ -1,4 +1,4 @@
-const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
+const baseUrl1 = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
 const recipeUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/posts/";
 let recipeData;
 
@@ -26,7 +26,7 @@ function renderNewrecipes(containerToFill, recipes) {
 }
 
 function getAmountOfRecipes(quantity) {
-    return fetch(baseUrl + `posts?per_page=` + quantity + `&categories=4`)
+    return fetch(baseUrl1 + `posts?per_page=` + quantity + `&categories=4`)
         .then((res) => res.json())
         .then((recipes) => {
             console.log(recipes)
