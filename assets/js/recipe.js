@@ -120,7 +120,30 @@ function renderOnerecipe(containerToFill, recipes) {
         shopping list
       </button>
     </article>
-  </section>`
+  </section>
+  <section class="recipeSuggestions">
+        <h4>Maybe you would also like...</h4>
+        <article>
+          <a href=""
+            ><img
+              src="./assets/img/eggOnToast.jpg"
+              alt="A toast with an egg topped with herbs"
+              loading="lazy"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/img/pieStuffedWithEggAndSpinach.jpg"
+              alt="a pie stuffed with boiled eggs, green onions, parsley, dill and spinach"
+              loading="lazy"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/img/filletWithSauceAndPotatoes.jpg"
+              alt="a fillet in a creamy sauce with boiled potatoes"
+              loading="lazy"
+          /></a>
+        </article>
+      </section>`
 }
 
 
