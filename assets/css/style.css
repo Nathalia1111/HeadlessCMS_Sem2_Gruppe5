@@ -18,6 +18,124 @@
   padding: 0;
 }
 
+/* Meal plans START */
+
+#headerMealPlans {
+  background-image: url(../img/COLOURBOX41284258.jpg); 
+  /* KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/baelgfrugter-nul-oekologisk-billede-41284258. Colourbox.dk. 2024. Accessed: 25/4/24 */ 
+  height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#headerMealPlans h1 {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.breadcrumbsMealPlans {
+  font-size: 15px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+#whiteWawe {
+  position: absolute;
+  top: 380px;
+}
+
+#overviewTitle {
+margin-top: 2rem;
+position: relative;
+text-align: center;
+}
+
+.mealPlansOverview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 60px;
+}
+
+.mealPlansOverview img {
+  opacity: 0.5;
+}
+
+.oneMealPlan {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.thisWeek {
+background-image: url(../img/yellowWawe.svg);
+height: 650px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.containerMealPlan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.weekMealPlan {
+padding: 20px;
+text-align: center;
+}
+
+.WPImg {
+  width: 220px;
+  height: 180px;
+}
+
+.btnShoppinglist {
+background-color: var(--darkOrange);
+border: var(--darkOrange);
+border-radius: 40px;
+padding: 10px 20px;
+width: 300px;
+margin-top: 20px;
+}
+
+.btnShoppinglist:hover {  
+  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24);
+} 
+
+.previousMealPlans {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.previousMealPlanContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.weekMealPlan:hover {
+  color: var(--darkOrange);
+}
+
+.weekMealPlan a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Meal plans SLUT */
+
 .logo,
 h1 {
   font-family: "Ubuntu";
@@ -321,3 +439,4 @@ footer {
   color: var(--darkGreen);
   padding-block: 50px;
 }
+
