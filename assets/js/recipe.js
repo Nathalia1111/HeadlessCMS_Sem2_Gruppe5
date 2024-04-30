@@ -1,52 +1,38 @@
 const mainRecipeEl = document.querySelector(".mainRecipe");
 
-function getOneRecipe() {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    const recipeId = urlParams.get('id');
-    return fetch(recipeUrl + recipeId)
-        .then((res) => res.json())
-        .then((recipes) => {
-            console.log(recipes)
-            recipeData = recipes;
-            return (recipes);
-        })
-        .catch(err => console.log("Fejl", err));
-}
-
 function renderOnerecipe(containerToFill, recipes) {
 
-    let ingredientsList;
-    if (recipes.acf.ingredients) {
-        // Gennemgår hver nøgle (ingrediens) i objektet
-        for (const key in recipes.acf.ingredients) {
-            const ingredient = recipes.acf.ingredients[key];
-            if (ingredient) {
-                ingredientsList += `<dd>${ingredient}</dd>`;
+  let ingredientsList = "";
+  if (recipes.acf.ingredients) {
+    // Gennemgår hver nøgle (ingrediens) i objektet
+    for (const key in recipes.acf.ingredients) {
+      const ingredient = recipes.acf.ingredients[key];
+      if (ingredient) {
+        ingredientsList += `<dd>${ingredient}</dd>`;
 
-            }
-            // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
+      }
+      // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
 
-        }
     }
+  }
 
-    let methodList;
-    if (recipes.acf.ingredients) {
-        // Gennemgår hver nøgle (ingrediens) i objektet
-        for (const key in recipes.acf.ingredients) {
-            const instruction = recipes.acf.ingredients[key];
-            if (instruction) {
-                methodList += `<dd>${instruction}</dd>`;
+  let methodList = "";
+  if (recipes.acf.ingredients) {
+    // Gennemgår hver nøgle (ingrediens) i objektet
+    for (const key in recipes.acf.ingredients) {
+      const instruction = recipes.acf.ingredients[key];
+      if (instruction) {
+        methodList += `<dd>${instruction}</dd>`;
 
-            }
-            // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
-        }
+      }
+      // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
     }
+  }
 
 
 
-    containerToFill.innerHTML = "";
-    containerToFill.innerHTML = `
+  containerToFill.innerHTML = "";
+  containerToFill.innerHTML = `
     <section class="hero">
     <article>
       <div class="title">
@@ -148,6 +134,6 @@ function renderOnerecipe(containerToFill, recipes) {
 
 
 
-getOneRecipe()
-    .then(recipes => renderOnerecipe(mainRecipeEl, recipes))
-    .catch(err => console.error("Fejl under hentning af opskrifter:", err));
+getOneRecipeOrNews()
+  .then(recipes => renderOnerecipe(mainRecipeEl, recipes))
+  .catch(err => console.error("Fejl under hentning af opskrifter:", err));

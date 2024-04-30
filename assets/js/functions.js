@@ -227,7 +227,7 @@ function renderNews(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newNews">
-        <a href="#"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
+        <a href="article.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
         </div>
         `
     });
@@ -238,8 +238,58 @@ function renderPosts(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newPosts">
-            <a href="#"><img src="${story.acf.image_1.sizes.large}" alt="${story.acf.image_1.alt}"><p>${story.acf.title}</p></a>
+            <a href="blogPost.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
             </div>
             `
     });
+}
+
+function getOneRecipeOrNews() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const recipeId = urlParams.get('id');
+    return fetch(recipeUrl + recipeId)
+        .then((res) => res.json())
+        .then((recipes) => {
+            console.log(recipes)
+            recipeData = recipes;
+            return (recipes);
+        })
+        .catch(err => console.log("Fejl", err));
+}
+
+function renderOneArticle(containerToFill, story) {
+    let textBox1 = "";
+    if (story.acf.textinput) {
+        for (const key in story.acf.textinput) {
+            const value = story.acf.textinput[key];
+
+            if (value) {
+
+                if (value.small_title) {
+                    textBox1 += `<h4>${value.small_title}</h4>`;
+                }
+
+                textBox1 += `<p>${value.textbox_1}</p>`;
+
+                if (value.image && value.image.url) {
+                    textBox1 += `<img src="${value.image.sizes.large}" alt="${value.image.alt}"> <br>`;
+                }
+
+                textBox1 += `<a href="">${value.textbox_2}</a>`;
+            }
+        }
+    }
+
+    containerToFill.innerHTML = "";
+    containerToFill.innerHTML = `
+    <h1 class="articleHeadline">${story.acf.titel}</h1>
+    <img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}">
+    <h2>${story.acf.introduction.chapter_1}</h2>
+    <div class="authorsLine">
+    <p>${story.acf.author[0].post_title}</p>
+    <p>${story.date}</p>
+    </div>
+    ${textBox1}
+    `
 }
