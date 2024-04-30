@@ -3,6 +3,7 @@ const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
 // KILDE TIL DATA: Foodista. https://foodista.brathcodestudio.com/wp-json/wp/v2/, Foodista Inc, 2008. Accessed: 17/04/2024.
 
 const mealPlanEls = document.querySelectorAll(".weekMealPlan");
+const freshNewsEl = document.querySelectorAll(".freshNews");
 
 // Functions (hente post fra wordpress efter specifik "tagId")
 function getRecipeById(tagId) {
@@ -27,3 +28,7 @@ function renderRecipebyId(recipe, index) {
     <p class="WPData">${recipe.title.rendered}</p></a>
     `
 };
+
+getAmountOfNews(4, 95)
+    .then(news => renderNews(freshNewsEl, news))
+    .catch(err => console.error("Fejl under hentning af opskrifter:", err));
