@@ -438,6 +438,15 @@ footer {
   align-items: center;
   color: var(--darkGreen);
   padding-block: 50px;
+}
+
+footer {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--darkGreen);
+  padding-block: 50px;
   margin-top: 90px;
 }
 
@@ -807,7 +816,7 @@ footer {
 
 .newsletterForm {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="937.329" viewBox="0 0 1922 937.329"><path id="Path_10" data-name="Path 10" d="M0,3.571S162.06,62.479,278.29,60.234c18.444-.356,190.109-9.271,324.641-74.159C619.515-19.19,793.321-63.31,942.49-22.96c49.759,18.78,234.931,64.986,312.176,32.213C1534.951-97.638,1922,3.571,1922,3.571v878.3S1837.1,779.483,1367.423,830c-115.071,12.376-262.346,60.739-403.576,29.016-77.573-21.488-271.409-57.786-430.308-14.479-155.258,34.863-326.371,73-420.878,40.9C57.077,866.707,0,881.868,0,881.868Z" transform="translate(0 39.807)" fill="%2397bb87"/></svg>');
-  height: 770px;
+  height: 1000px;
   background-size: cover;
   position: relative;
   top: -200px;
