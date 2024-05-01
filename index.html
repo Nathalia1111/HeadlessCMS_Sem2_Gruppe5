@@ -131,35 +131,20 @@
         </div>
       </div>
 
-      <section class="newsletter">
-        <h2 class="subtitle">Be the first to recieve</h2>
-        <h2 class="subtitle">news from FoodFiesta</h2>
 
-        <article class="newsletterSignUp">
-          <form action="active">
-            <input
-              class="newsLetterSignUpInput"
-              type="text"
-              placeholder="Name..."
-            />
-            <input
-              class="newsLetterSignUpInput"
-              type="text"
-              placeholder="Phone number..."
-            />
-            <input
-              class="newsLetterSignUpInput"
-              type="text"
-              placeholder="Mail..."
-            />
-          </form>
-        </article>
-
-        <button class="signUpBtn btn">Sign up for the newsletter</button>
-      </section>
+      <div class="newsletterForm">
+        <h3>Be the first to receive news from FoodFiesta</h3>
+        <form id="signupForm" action="#" method="post">
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="number" id="number" name="number" placeholder="Phonenumber" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <button type="submit" class="btn">Sign up for newsletter</button>
+        </form>
+      </div>
+      
     </main>
     <footer>
-      <img class="logo" src="./assets/img/foodfiestaLogo.svg" alt="" />
+      <p class="logo">FoodFiesta</p>
       <p><i class="fa-solid fa-envelope"></i> Contact_FoodFiesta@hello.com</p>
       <p>Created by team 5 MMD-CSD-S23</p>
     </footer>

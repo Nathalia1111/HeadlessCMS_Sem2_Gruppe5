@@ -49,14 +49,111 @@ h6 {
   --lightGreen: hsl(102, 28%, 63%);
   --orange: hsl(45, 85%, 67%);
   --darkOrange: hsl(22, 87%, 59%);
-  --standardSize: 1rem;
-  --titles: 1.2rem;
+  --standardSize: 1.5rem;
+  --titles: 3.125rem;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Navigation */
+
+header {
+  background-color: var(--green);
+  position: relative;
+  z-index: 2;
+}
+
+
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+header .logo a p {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+  color: var(--darkGreen);
+}
+
+nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login {
+  padding: 20px;
+}
+
+.login i {
+  font-size: 1.2rem;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.menu a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: var(--standardSize);
+}
+
+.menu a:hover {
+  background-color: var(--darkOrange);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--green);
+  width: 140px;
+  display: none;
+}
+
+.menu li:hover>.submenu {
+  display: block;
+}
+
+.submenu2 {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 160px;
+  background-color: var(--orange);
+  display: none;
+}
+
+.menu li:hover>.submenu2 {
+  display: block;
 }
 
 /* Meal plans START */
@@ -85,7 +182,7 @@ h6 {
 
 #whiteWawe {
   position: absolute;
-  top: 380px;
+  top: 390px;
 }
 
 #overviewTitle {
@@ -152,8 +249,9 @@ h6 {
   border: var(--darkOrange);
   border-radius: 40px;
   padding: 10px 20px;
-  width: 300px;
+  width: 400px;
   margin-top: 20px;
+  font-size: var(--standardSize);
 }
 
 .btnShoppinglist:hover {
@@ -197,7 +295,7 @@ h6 {
   width: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  top: 300px;
+  top: 320px;
 }
 
 .hero {
@@ -858,23 +956,13 @@ footer {
 }
 
 .newsletterForm form input {
-  height: 93px;
+  height: 50px;
   width: 477px;
   text-align: center;
   border-radius: 30px;
   border: none;
   background-color: rgba(255, 255, 255, 0.69);
-  font-size: 25px;
-}
-
-.newsletterForm button {
-  width: 386px;
-  height: 90px;
-  border: none;
-  border-radius: 40px;
-  background-color: var(--darkOrange);
-  font-size: 30px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.34);
+  font-size: 20px;
 }
 
 .articleSection {
@@ -908,97 +996,10 @@ footer {
   flex-direction: column;
 }
 
-header {
-  background-color: var(--green);
-  position: relative;
-  z-index: 2;
-}
-
-.logo img {
-  width: 200px;
-}
-
-header .logo {
-  margin-right: auto;
-  margin-left: 15px;
-}
-
-header .logo a {
-  font-size: 7rem;
-  text-decoration: none;
-}
-
-header .logo a p {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Ubuntu";
-  color: var(--darkGreen);
-}
-
-nav {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.login {
-  padding: 20px;
-}
-
-.login i {
-  font-size: 1.2rem;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu a {
-  display: block;
-  padding-block: 10px;
-  padding-inline: 20px;
-}
-
-.menu a,
-.login {
-  text-decoration: none;
-  color: var(--darkGreen);
+html body p {
   font-size: var(--standardSize);
 }
 
-.menu a:hover {
-  background-color: var(--darkOrange);
-}
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--green);
-  width: 140px;
-  display: none;
-}
-
-.menu li:hover>.submenu {
-  display: block;
-}
-
-.submenu2 {
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: 160px;
-  background-color: var(--orange);
-  display: none;
-}
-
-.menu li:hover>.submenu2 {
-  display: block;
+html body h2 {
+  font-size: var(--titles);
 }
