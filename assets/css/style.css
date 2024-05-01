@@ -28,6 +28,19 @@ h6 {
   margin-bottom: 12px;
 }
 
+.btn {
+  background-color: var(--darkOrange);
+  color: var(--blueishBlack);
+  padding-block: 13px;
+  padding-inline: 35px;
+  border-radius: 30px;
+  border-style: none;
+  font-size: var(--standardSize);
+  box-shadow: 3px 3px 4px hsla(0, 0%, 11%, 0.237);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 :root {
   --blueishBlack: hsl(237, 95%, 8%);
   --darkGreen: hsl(155, 28%, 18%);
@@ -98,9 +111,15 @@ h6 {
   justify-content: center;
 }
 
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .thisWeek {
   background-image: url(../img/yellowWawe.svg);
-  height: 650px;
+  height: 900px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -433,6 +452,15 @@ footer {
   position: relative;
 }
 
+.heroPictures2 {
+  height: 486px;
+  width: 100%;
+  background-image: url(../img/COLOURBOX52673515.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
 .heroPictures img {
   width: 100%;
   height: 100%;
@@ -470,6 +498,19 @@ footer {
 .newestRecipes {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1922" height="722.508" viewBox="0 0 1922 722.508"><path id="Path_10" data-name="Path 10" d="M0,649.264s162.06-45.407,278.29-43.677c18.444.275,190.109,7.146,324.641,57.163,16.584,4.058,190.39,38.067,339.559,6.964,49.759-14.476,234.931-50.092,312.176-24.83,280.285,82.393,667.334,4.38,667.334,4.38V-27.741s-84.9,78.919-554.577,39.983C1252.351,2.7,1105.077-34.576,963.847-10.123,886.274,6.44,692.438,34.419,533.539,1.037,378.281-25.836,207.168-55.232,112.661-30.486,57.077-16.055,0-27.741,0-27.741Z" transform="translate(0 39.807)" fill="%2397bb87"/></svg>');
   height: 770px;
+  background-size: cover;
+  position: relative;
+  top: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.newestRecipes2 {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="860.173" viewBox="0 0 1920 860.173"><path id="Path_6" data-name="Path 6" d="M0,0S161.891,54.059,278,52c18.425-.327,189.911-8.508,324.3-68.054,16.567-4.832,190.192-45.32,339.206-8.291C991.216-7.112,1176.2,35.29,1253.361,5.215,1533.354-92.877,1920,0,1920,0V806s-84.81-93.957-554-47.6c-114.952,11.357-262.073,55.739-403.156,26.628C885.352,765.306,691.717,732,532.984,771.739c-155.1,31.993-326.031,66.991-420.44,37.53C57.017,792.087,0,806,0,806Z" transform="translate(0 39.807)" fill="%23fff"/></svg>');
+  height: 750px;
   background-size: cover;
   position: relative;
   top: -70px;
