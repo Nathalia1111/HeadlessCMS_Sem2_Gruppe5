@@ -33,12 +33,12 @@ h6 {
   font-family: "open sans";
 }
 
-h2 {
+.subtitle {
   text-align: center;
   font-weight: 500;
 }
 
-button {
+.btn {
   background-color: var(--darkOrange);
   color: var(--blueishBlack);
   padding-block: 13px;
@@ -139,6 +139,12 @@ nav li {
 }
 
 /* Newest recipes */
+.btnLeft {
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+}
+
 .newestRecipes {
   z-index: 1;
   position: relative;
@@ -262,10 +268,4 @@ footer {
   align-items: center;
   color: var(--darkGreen);
   padding-block: 50px;
-}
-
-.btnLeft {
-  display: flex;
-  justify-content: end;
-  margin-right: 5%;
 }
