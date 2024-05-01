@@ -9,7 +9,7 @@ function renderAllrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="recipeForm">
-        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}" loading="lazy"> <p>${recipe.acf.title}</p></a>
+        <a href="./recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}" loading="lazy"> <p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -20,7 +20,7 @@ function renderNewrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="newRecipe">
-        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}" loading="lazy"><p>${recipe.acf.title}</p></a>
+        <a href="./recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}" loading="lazy"><p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -225,7 +225,7 @@ function renderNews(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newNews">
-        <a href="article.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
+        <a href="./article.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
         </div>
         `
     });
@@ -236,7 +236,7 @@ function renderPosts(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newPosts">
-            <a href="blogPost.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
+            <a href="./blogPost.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
             </div>
             `
     });
@@ -471,7 +471,7 @@ function getRecipeById(tagId) {
 
 function renderRecipebyId(recipe, index) {
     mealPlanEls[index].innerHTML += `
-    <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
+    <a href="./recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
     <p class="WPData">${recipe.title.rendered}</p></a>
     `
 };

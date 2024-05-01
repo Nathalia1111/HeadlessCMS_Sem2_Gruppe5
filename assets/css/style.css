@@ -923,6 +923,18 @@ header .logo {
   margin-left: 15px;
 }
 
+header .logo a {
+  font-size: 7rem;
+  text-decoration: none;
+}
+
+header .logo a p {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+  color: var(--darkGreen);
+}
+
 nav {
   display: flex;
   position: relative;

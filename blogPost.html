@@ -11,17 +11,63 @@
   </head>
   <body>
     <header>
-      <p class="logo">FoodFiesta</p>
       <nav>
-        <ul>
-          <li><a href="./index.html">Home page</a></li>
-          <li><a href="./recipes.html">Recipes</a></li>
-          <li><a href="./mealPlans.html">Meal plans</a></li>
+        <div class="logo">
+          <a href="./index.html"> <p>FoodFiesta</p></a>
+        </div>
+
+        <ul class="menu">
+          <li>
+            <a href="./index.html">Homepage</a>
+          </li>
+
+          <li>
+            <a href="./recipes.html">Recipes</a>
+            <ul class="submenu">
+              <a href="#">All recipes</a>
+              <a href="#">Appetizers</a>
+              <a href="#">Main courses</a>
+              <a href="#">Desserts</a>
+              <a href="#">Quick & easy</a>
+              <a href="#">Holidays & celebrations</a>
+              <a href="#">Video recipes</a>
+            </ul>
+          </li>
+
+          <li>
+            <a href="./mealPlans.html">Meal plans</a>
+            <ul class="submenu">
+              <a href="#">This weeks meal plan</a>
+              <a href="#">All meal plans</a>
+            </ul>
+          </li>
+
           <li><a href="#">Inspiration</a></li>
-          <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+
+          <li>
+            <a href="./newsAndBlogs.html">News & Blogs</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Nyheder</a>
+                <ul class="submenu2">
+                  <li><a href="#">Seneste nyheder</a></li>
+                  <li><a href="#">Sæsonrelaterede artikler & opskrift</a></li>
+                  <li><a href="#">Tilmeld nyhedsbrev</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Blogs</a>
+                <ul class="submenu2">
+                  <li><a href="#">Seneste blogindlæg</a></li>
+                  <li><a href="#">Mest læste blogindlæg</a></li>
+                  <li><a href="#">Tips & Tricks</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
+        <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
       </nav>
-      <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
     </header>
     <main>
       <div class="heroPictureSection">
