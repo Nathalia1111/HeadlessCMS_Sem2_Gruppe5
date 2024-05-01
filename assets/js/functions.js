@@ -283,6 +283,14 @@ function renderOneArticle(containerToFill, story) {
 
     containerToFill.innerHTML = "";
     containerToFill.innerHTML = `
+   
+    <article class="links">
+    <a href="./newsAndBlogs.html">News & Blogs </a>
+    <p>&gt;</p>
+    <a href="#">${story.acf.titel}</a>
+  </article>
+
+  <div class="articleSection">
     <h1 class="articleHeadline">${story.acf.titel}</h1>
     <img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}">
     <h2>${story.acf.introduction.chapter_1}</h2>
@@ -291,5 +299,7 @@ function renderOneArticle(containerToFill, story) {
     <p>${story.date}</p>
     </div>
     ${textBox1}
+  </div>
+
     `
 }
