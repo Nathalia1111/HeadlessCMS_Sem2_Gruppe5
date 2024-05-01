@@ -13,7 +13,6 @@ dd {
 
 /* OBS OM GENEREL STYLING PÅVIRKER ALLE BRANCHES VED MERGE^*/
 
-
 .logo,
 h1 {
   font-family: "Ubuntu";
@@ -60,7 +59,6 @@ h6 {
   padding-top: 80px;
   color: var(--darkOrange);
   font-size: 100px;
-
 }
 
 .breadcrumbsMealPlans {
@@ -216,6 +214,20 @@ nav ul a {
   padding: 20px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
 /* Hero img */
 .wave {
   background-image: url(../img/whiteWawe.svg);
@@ -239,7 +251,6 @@ nav ul a {
   justify-content: space-around;
   align-items: flex-start;
 }
-
 
 .title {
   color: var(--darkOrange);
@@ -303,7 +314,6 @@ nav ul a {
   grid-area: infoBox;
   position: sticky;
   top: 40px;
-
 }
 
 #informationBox button {
@@ -422,7 +432,6 @@ footer {
   margin-top: 90px;
 }
 
-
 /* Style for opskrifter */
 .heroPictures {
   height: 486px;
@@ -438,7 +447,6 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-
 
 .heroPictures h1 {
   position: absolute;
@@ -513,13 +521,11 @@ footer {
   transition: ease-out 250ms;
 }
 
-
 .newRecipe a:hover,
 .recipeForm:hover {
   scale: 1.1;
   transition: ease-out 250ms;
 }
-
 
 .newRecipe img {
   width: 315px;
@@ -530,7 +536,7 @@ footer {
 .filterBtn {
   width: 190px;
   font-size: 25px;
-  background-color: #F4AB34;
+  background-color: #f4ab34;
   border: none;
   border-radius: 10px;
   margin-left: 2.5rem;
@@ -561,7 +567,7 @@ footer {
 }
 
 .filters select {
-  background-color: #F4AB34;
+  background-color: #f4ab34;
   border: unset;
   padding: 10px;
   border-radius: 10px;
@@ -654,7 +660,6 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-
 
 .heroPictureSection h1 {
   position: absolute;

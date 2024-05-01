@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodFiesta - Nyheder & blogs</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./assets/js/functions.js" defer></script>
     <script src="./assets/js/article.js" defer></script>
   </head>
@@ -14,7 +20,14 @@
       <p class="logo">FoodFiesta</p>
       <nav>
         <ul>
-          <li><a href="./index.html">Home page</a></li>
+          <div class="dropdown">
+            <li><a href="./index.html">Home page</a></li>
+            <div class="dropdownContent">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
           <li><a href="./recipes.html">Recipes</a></li>
           <li><a href="./mealPlans.html">Meal plans</a></li>
           <li><a href="#">Inspiration</a></li>
@@ -32,9 +45,8 @@
         </div>
       </div>
 
-      <article class="newArticle">
-      </article>
-</main>
+      <article class="newArticle"></article>
+    </main>
     <footer>
       <p class="logo">FoodFiesta</p>
       <p><i class="fa-solid fa-envelope"></i> Contact_FoodFiesta@hello.com</p>
@@ -42,4 +54,3 @@
     </footer>
   </body>
 </html>
-
