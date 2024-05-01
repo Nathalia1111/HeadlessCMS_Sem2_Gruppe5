@@ -187,53 +187,8 @@ h6 {
 
 /* ---Recipe START --- */
 
-.logo {
-  color: var(--darkGreen);
-  font-weight: 600;
-  font-size: 30px;
-}
 
-header .logo {
-  margin-right: auto;
-  margin-left: 15px;
-}
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: var(--green);
-}
-
-nav ul a,
-.login {
-  text-decoration: none;
-  color: var(--darkGreen);
-  font-size: var(--standardSize);
-}
-
-.login {
-  padding: 20px;
-}
-
-.login i {
-  font-size: 1.2rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-nav li {
-  padding: 20px;
-}
-
-nav ul a {
-  padding: 20px;
-}
 
 /* Hero img */
 .wave {
@@ -951,4 +906,87 @@ footer {
 .mainRecipe {
   display: flex;
   flex-direction: column;
+}
+
+header {
+  background-color: var(--green);
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  width: 200px;
+}
+
+header .logo {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login {
+  padding: 20px;
+}
+
+.login i {
+  font-size: 1.2rem;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.menu a,
+.login {
+  text-decoration: none;
+  color: var(--darkGreen);
+  font-size: var(--standardSize);
+}
+
+.menu a:hover {
+  background-color: var(--darkOrange);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--green);
+  width: 140px;
+  display: none;
+}
+
+.menu li:hover>.submenu {
+  display: block;
+}
+
+.submenu2 {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 160px;
+  background-color: var(--orange);
+  display: none;
+}
+
+.menu li:hover>.submenu2 {
+  display: block;
 }
