@@ -9,7 +9,7 @@ function renderAllrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="recipeForm">
-        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}"> <p>${recipe.acf.title}</p></a>
+        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.large}" alt="${recipe.acf.image.alt}" loading="lazy"> <p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -20,7 +20,7 @@ function renderNewrecipes(containerToFill, recipes) {
     containerToFill.innerHTML = "";
     recipes.forEach(recipe => {
         containerToFill.innerHTML += `<div class="newRecipe">
-        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}"><p>${recipe.acf.title}</p></a>
+        <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.sizes.medium}" alt="${recipe.acf.image.alt}" loading="lazy"><p>${recipe.acf.title}</p></a>
         </div>
         `
     });
@@ -227,7 +227,7 @@ function renderNews(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newNews">
-        <a href="article.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
+        <a href="article.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
         </div>
         `
     });
@@ -238,7 +238,7 @@ function renderPosts(containerToFill, news) {
     containerToFill.innerHTML = "";
     news.forEach(story => {
         containerToFill.innerHTML += `<div class="newPosts">
-            <a href="blogPost.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}"><p>${story.acf.titel}</p></a>
+            <a href="blogPost.html?id=${story.id}"><img src="${story.acf.image.sizes.large}" alt="${story.acf.image.alt}" loading="lazy"><p>${story.acf.titel}</p></a>
             </div>
             `
     });
@@ -273,7 +273,7 @@ function renderOneArticle(containerToFill, story) {
                 textBox1 += `<p>${value.textbox_1}</p>`;
 
                 if (value.image && value.image.url) {
-                    textBox1 += `<img src="${value.image.sizes.large}" alt="${value.image.alt}"> <br>`;
+                    textBox1 += `<img src="${value.image.sizes.large}" alt="${value.image.alt}" loading="lazy"> <br>`;
                 }
 
                 textBox1 += `<a href="">${value.textbox_2}</a>`;

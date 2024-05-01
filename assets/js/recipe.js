@@ -29,6 +29,18 @@ function renderOnerecipe(containerToFill, recipes) {
     }
   }
 
+  let videoEl = "";
+  if (recipes.acf.video) {
+    // Gennemgår hver nøgle (ingrediens) i objektet
+    for (const key in recipes.acf.video) {
+      const value = recipes.acf.video[key];
+      if (value) {
+        videoEl += `${value}`;
+      }
+      // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
+
+    }
+  }
 
 
   containerToFill.innerHTML = "";
@@ -110,6 +122,9 @@ function renderOnerecipe(containerToFill, recipes) {
       </button>
     </article>
   </section>
+  <div class="videoContainer">
+  ${videoEl}
+  </div>
   <section class="recipeSuggestions">
         <h4>Maybe you would also like...</h4>
         <article>
@@ -133,10 +148,10 @@ function renderOnerecipe(containerToFill, recipes) {
           /></a>
           </article>
           </section>`
-          // KILDER TIL IMG I CLASS="SUGGESTIONS"
-          // KILDE: ADDICTIVE STOCK CREATIVES. https://www.colourbox.com/image/delicious-breakfast-of-fried-eggs-with-toast-and-salad-image-61237509. Colourbox. 2024. Accessed 29.04.2024.
-          // KILDE: Sergii Koval. https://www.colourbox.com/image/homemade-delicious-pie-stuffed-with-boiled-eggs-green-onions-parsley-dill-and-spinach-close-up-on-a-wooden-board-horizontal-image-56650955. Colourbox. 2024. Accessed 29.04.2024. 
-          // KILDE: Sergii Koval. https://www.colourbox.com/image/spicy-herring-fillet-in-a-creamy-sauce-with-a-garnish-of-boiled-potatoes-close-up-in-a-plate-horizontal-image-58864668. Colourbox. 2024. Accessed 29.04.2024.
+  // KILDER TIL IMG I CLASS="SUGGESTIONS"
+  // KILDE: ADDICTIVE STOCK CREATIVES. https://www.colourbox.com/image/delicious-breakfast-of-fried-eggs-with-toast-and-salad-image-61237509. Colourbox. 2024. Accessed 29.04.2024.
+  // KILDE: Sergii Koval. https://www.colourbox.com/image/homemade-delicious-pie-stuffed-with-boiled-eggs-green-onions-parsley-dill-and-spinach-close-up-on-a-wooden-board-horizontal-image-56650955. Colourbox. 2024. Accessed 29.04.2024. 
+  // KILDE: Sergii Koval. https://www.colourbox.com/image/spicy-herring-fillet-in-a-creamy-sauce-with-a-garnish-of-boiled-potatoes-close-up-in-a-plate-horizontal-image-58864668. Colourbox. 2024. Accessed 29.04.2024.
 }
 
 

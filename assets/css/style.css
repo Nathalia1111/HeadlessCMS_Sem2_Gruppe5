@@ -39,6 +39,7 @@ h6 {
   box-shadow: 3px 3px 4px hsla(0, 0%, 11%, 0.237);
   cursor: pointer;
   text-decoration: none;
+  position: relative;
 }
 
 :root {
@@ -167,7 +168,6 @@ h6 {
 
 .previousMealPlanContainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 40%;
@@ -394,6 +394,12 @@ nav ul a {
   margin: 30px 150px;
 }
 
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
 /* Suggestions for other recipes */
 .recipeSuggestions {
   background: url(../img/lightGreenWawe.svg);
@@ -455,13 +461,14 @@ footer {
 .heroPictures2 {
   height: 486px;
   width: 100%;
-  background-image: url(../img/COLOURBOX52673515.jpg);
+  background-image: url(../img/hero.jpg);
   background-size: cover;
   object-fit: cover;
   position: relative;
 }
 
-.heroPictures img {
+.heroPictures img,
+.heroPictures2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -474,6 +481,14 @@ footer {
   left: 15%;
   color: var(--darkOrange);
   font-size: 100px;
+}
+
+.heroPictures2 h1 {
+  text-align: center;
+  color: var(--darkOrange);
+  font-size: 100px;
+  padding-top: 10%;
+
 }
 
 .search {
@@ -510,7 +525,7 @@ footer {
 
 .newestRecipes2 {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="860.173" viewBox="0 0 1920 860.173"><path id="Path_6" data-name="Path 6" d="M0,0S161.891,54.059,278,52c18.425-.327,189.911-8.508,324.3-68.054,16.567-4.832,190.192-45.32,339.206-8.291C991.216-7.112,1176.2,35.29,1253.361,5.215,1533.354-92.877,1920,0,1920,0V806s-84.81-93.957-554-47.6c-114.952,11.357-262.073,55.739-403.156,26.628C885.352,765.306,691.717,732,532.984,771.739c-155.1,31.993-326.031,66.991-420.44,37.53C57.017,792.087,0,806,0,806Z" transform="translate(0 39.807)" fill="%23fff"/></svg>');
-  height: 750px;
+  height: 800px;
   background-size: cover;
   position: relative;
   top: -70px;
@@ -529,7 +544,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 500px;
+  height: 450px;
   gap: 4rem;
 }
 
@@ -921,4 +936,13 @@ footer {
 .newArticle h2,
 .blogPostContainer h2 {
   font-size: 30px;
+}
+
+.noFound {
+  font-size: 25px;
+}
+
+.mainRecipe {
+  display: flex;
+  flex-direction: column;
 }
