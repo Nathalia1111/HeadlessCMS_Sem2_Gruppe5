@@ -16,6 +16,7 @@ function getRecipeById(tagId) {
             data.forEach((recipe, index) => renderRecipebyId(recipe, index))
         })
         .catch((err) => {
+            alert("Error! We're sorry to inform you that a mistake has been made. Please try again", err)
         })
 };
 getRecipeById(65);
