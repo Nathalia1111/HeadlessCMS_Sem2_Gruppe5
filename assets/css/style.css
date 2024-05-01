@@ -1,6 +1,29 @@
 /* General Styling */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+p, ol, a, dd {
+  font-family: "open sans";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* OBS OM GENEREL STYLING PÅVIRKER ALLE BRANCHES VED MERGE^*/ 
+
+
+.logo,
+h1 {
+  font-family: "Ubuntu";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "open sans";
+  margin-bottom: 12px;
+}
+
 :root {
   --blueishBlack: hsl(237, 95%, 8%);
   --darkGreen: hsl(155, 28%, 18%);
@@ -136,66 +159,7 @@
 
 /* Meal plans SLUT */
 
-.logo,
-h1 {
-  font-family: "Ubuntu";
-}
-
-a,
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "open sans";
-}
-
-/* h3 {
-  font-size: var(--titles);
-} */
-
-/* ---Recipe--- */
-/* Navigation */
-/* .logo {
-  color: var(--darkGreen);
-  font-weight: 600;
-  font-family: "Ubuntu";
-  font-size: 30px;
-}
-
-header .logo {
-  margin-right: auto;
-  margin-left: 15px;
-}
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: var(--green);
-  padding-block: 20px;
-}
-
-nav ul a,
-.login {
-  text-decoration: none;
-  color: var(--darkGreen);
-  font-size: 1.2rem;
-}
-
-.login {
-  margin-inline: 50px;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-inline: 10px;
-} */
+/* ---Recipe START --- */
 
 .logo {
   color: var(--darkGreen);
@@ -212,7 +176,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: var(--green);
+  background-color: var(--green);   
 }
 
 nav ul a,
@@ -241,6 +205,10 @@ nav li {
   padding: 20px;
 }
 
+nav ul a {
+  padding: 20px;
+}
+
 /* Hero img */
 .wave {
   background-image: url(../img/whiteWawe.svg);
@@ -248,7 +216,7 @@ nav li {
   width: 100%;
   background-repeat: no-repeat;
   position: absolute;
-  top: 50%;
+  top: 300px;
 }
 
 .hero {
@@ -265,17 +233,6 @@ nav li {
   align-items: flex-start;
 }
 
-.searchbar {
-  border-radius: 50px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.692);
-  font-size: var(--standardSize);
-  padding-block: 15px;
-  padding-left: 20px;
-  color: var(--blueishBlack);
-  margin-left: 100px;
-  margin-top: 30px;
-}
 
 .title {
   color: var(--darkOrange);
@@ -306,26 +263,27 @@ nav li {
 
 .links {
   display: flex;
+  margin-top: 40px;
+  margin-left: 130px;
 }
 
 .links a {
+  font-size: 15px;
   text-decoration: none;
   color: var(--blueishBlack);
-  margin-inline: 10px;
-}
-
-.links a:first-child {
-  margin-left: 30px;
 }
 
 .recipeData {
-  margin-inline: 15vw;
-  margin-bottom: 30px;
+  margin: 50px 100px;
+  position: sticky;
+  left: 220px;
 }
 
 .recipeData img {
-  width: 500px;
+  width: 450px;
   height: 300px;
+  position: sticky;
+  top: 20px;
 }
 
 /* the recipe */
@@ -335,6 +293,10 @@ nav li {
   border-radius: 30px;
   background-color: var(--orange);
   padding: 10px;
+  grid-area: infoBox;
+  position: sticky;
+  top: 40px;
+
 }
 
 #informationBox button {
@@ -381,27 +343,29 @@ nav li {
   font-size: 0.9rem;
 }
 
-/* .theRecipe {
+.theRecipe {
   display: grid;
-  grid-template-columns: 250px 1fr 1fr 250px;
-  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "description infoBox"
+    "ingredients ."
+    "preparation .";
   gap: 20px;
-  justify-items: center;
-} */
+} 
 
 .description {
-  grid-column: 2/3;
+  grid-area: description;
+  margin: 30px 150px;
 }
 
-/* .ingredients {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin-bottom: 400px;
-} */
+.ingredients {
+  grid-area: ingredients;
+  margin: 30px 150px;
+} 
 
 .preparation {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  grid-area: preparation;
+  margin: 30px 150px;
 }
 
 /* Suggestions for other recipes */
@@ -693,7 +657,7 @@ footer {
   font-size: 100px;
 }
 
-.search {
+.searchBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -702,9 +666,9 @@ footer {
   border-radius: 60px;
   background-color: rgba(255, 255, 255, 0.59);
   padding: 20px 30px;
-  position: relative;
-  top: 15%;
-  left: 75%;
+  position: absolute;
+  top: 50px;
+  left: 80%;
 }
 
 .search p,
