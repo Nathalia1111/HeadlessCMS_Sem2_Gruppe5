@@ -3,15 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodFiesta - Main page</title>
+    <title>FoodFiesta - Forside</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/functions.js" defer></script>
     <script src="./assets/js/mainPage.js" defer></script>
-    <script src="./assets/js/recipes.js" defer></script>
-    <script src="./assets/js/recipe.js" defer></script>
-    <script src="./assets/js/mealPlans.js" defer></script>
-    <script src="./assets/js/newsAndBlogs.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a class="logo" href="./index.html">
+        <img class="logo" src="./assets/img/foodfiestaLogo.svg" alt=""
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home page</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./mealPlans.html">Meal plans</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="./newsAndBlogs.html">News & Blogs</a></li>
+        </ul>
+      </nav>
+      <a class="login" href="#"><i class="fa-solid fa-user"></i> Login</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article>
+          <img class="title" src="./assets/img/foodfiestaOrange.svg" alt="" />
+          <input class="searchbar" type="text" placeholder="Search... " />
+        </article>
+      </section>
+      <div class="wave"></div>
+
+      <section class="newestRecipes">
+        <h2 class="subtitle">Newest recipes</h2>
+        <article>
+          <div class="newestRecipesData"></div>
+          <div class="newestRecipesData"></div>
+          <div class="newestRecipesData"></div>
+          <!-- <img src="./assets/img/COLOURBOX50676926.jpg" alt="" />
+          <img src="./assets/img/COLOURBOX50676926.jpg" alt="" />
+          <img src="./assets/img/COLOURBOX50676926.jpg" alt="" /> -->
+        </article>
+        <br />
+        <div class="btnLeft">
+          <button class="btn">See more recipes</button>
+        </div>
+      </section>
+
+      <section class="thisWeek">
+        <h2 class="subtitle">Meal plan</h2>
+        <div class="containerMealPlan">
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <div class="WPData"></div>
+          </div>
+          <div class="weekMealPlan">
+            <p class="WPData"></p>
+          </div>
+          <div class="weekMealPlan">
+            <p class="WPData"></p>
+          </div>
+        </div>
+        <div class="btnLeft">
+          <button class="btn">Go to mealplan</button>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2 class="subtitle">News</h2>
+        <article class="freshNews">
+          <!-- <a href=""><img src="./assets/img/COLOURBOX50676926.jpg" alt="" /></a>
+          <div class="smallerNews">
+            <a href=""
+              ><img src="./assets/img/COLOURBOX50676926.jpg" alt=""
+            /></a>
+            <a href=""
+              ><img src="./assets/img/COLOURBOX50676926.jpg" alt=""
+            /></a>
+          </div> -->
+        </article>
+        <div class="btnLeft">
+          <button class="btn">See other news</button>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <h2 class="subtitle">Be the first to recieve</h2>
+        <h2 class="subtitle">news from FoodFiesta</h2>
+
+        <article class="newsletterSignUp">
+          <form action="active">
+            <input
+              class="newsLetterSignUpInput"
+              type="text"
+              placeholder="Name..."
+            />
+            <input
+              class="newsLetterSignUpInput"
+              type="text"
+              placeholder="Phone number..."
+            />
+            <input
+              class="newsLetterSignUpInput"
+              type="text"
+              placeholder="Mail..."
+            />
+          </form>
+        </article>
+
+        <button class="signUpBtn btn">Sign up for the newsletter</button>
+      </section>
+    </main>
+    <footer>
+      <img class="logo" src="./assets/img/foodfiestaLogo.svg" alt="" />
+      <p><i class="fa-solid fa-envelope"></i> Contact_FoodFiesta@hello.com</p>
+      <p>Created by team 5 MMD-CSD-S23</p>
+    </footer>
+  </body>
 </html>
