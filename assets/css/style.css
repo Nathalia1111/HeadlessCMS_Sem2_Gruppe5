@@ -484,10 +484,12 @@ footer {
 }
 
 .heroPictures2 h1 {
+  position: absolute;
   text-align: center;
   color: var(--darkOrange);
   font-size: 100px;
   padding-top: 10%;
+  left: 36%;
 
 }
 

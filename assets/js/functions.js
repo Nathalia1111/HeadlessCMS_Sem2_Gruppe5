@@ -1,5 +1,5 @@
-const baseUrl1 = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
 const recipeUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/posts/";
+const baseUrl = "https://foodista.brathcodestudio.com/wp-json/wp/v2/";
 let recipeData;
 let newsData;
 
@@ -27,10 +27,9 @@ function renderNewrecipes(containerToFill, recipes) {
 }
 
 function getAmountOfRecipes(quantity) {
-    return fetch(baseUrl1 + `posts?per_page=` + quantity + `&categories=4`)
+    return fetch(baseUrl + `posts?per_page=` + quantity + `&categories=4`)
         .then((res) => res.json())
         .then((recipes) => {
-            console.log(recipes)
             recipeData = recipes;
             return (recipes);
         })
@@ -212,10 +211,9 @@ function restAllFilters() {
 };
 
 function getAmountOfNews(quantity, categoryId) {
-    return fetch(baseUrl1 + `posts?per_page=` + quantity + `&categories=` + categoryId)
+    return fetch(baseUrl + `posts?per_page=` + quantity + `&categories=` + categoryId)
         .then((res) => res.json())
         .then((news) => {
-            console.log(news)
             newsData = news;
             return (news);
         })
@@ -251,7 +249,6 @@ function getOneRecipeOrNews() {
     return fetch(recipeUrl + recipeId)
         .then((res) => res.json())
         .then((recipes) => {
-            console.log(recipes)
             recipeData = recipes;
             return (recipes);
         })
@@ -303,3 +300,193 @@ function renderOneArticle(containerToFill, story) {
 
     `
 }
+
+function renderOnerecipe(containerToFill, recipes) {
+
+    let ingredientsList = "";
+    if (recipes.acf.ingredients) {
+        // Gennemgår hver nøgle (ingrediens) i objektet
+        for (const key in recipes.acf.ingredients) {
+            const ingredient = recipes.acf.ingredients[key];
+            if (ingredient) {
+                ingredientsList += `<dd>${ingredient}</dd>`;
+
+            }
+            // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
+
+        }
+    }
+
+    let methodList = "";
+    if (recipes.acf.ingredients) {
+        // Gennemgår hver nøgle (ingrediens) i objektet
+        for (const key in recipes.acf.ingredients) {
+            const instruction = recipes.acf.ingredients[key];
+            if (instruction) {
+                methodList += `<dd>${instruction}</dd>`;
+
+            }
+            // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
+        }
+    }
+
+    let videoEl = "";
+    if (recipes.acf.video) {
+        // Gennemgår hver nøgle (ingrediens) i objektet
+        for (const key in recipes.acf.video) {
+            const value = recipes.acf.video[key];
+            if (value) {
+                videoEl += `${value}`;
+            }
+            // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
+
+        }
+    }
+
+
+    containerToFill.innerHTML = "";
+    containerToFill.innerHTML = `
+      <section class="hero">
+      <article>
+        <div class="title">
+          <h1>Recipe</h1>
+          <h2>${recipes.acf.title}</h2>
+        </div>
+        <div class="searchBox">
+          <p>Search...</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </article>
+      </section>
+      <div class="wave"></div>
+  
+    <section class="recipeInformation">
+      <article class="links">
+        <a href="./recipes.html">Recipes</a>
+        <p>&gt;</p>
+        <a href="./recipe.html">${recipes.acf.title}</a>
+      </article>
+  
+      <article class="recipeData">
+        <img src="${recipes.acf.image.url}" alt="${recipes.acf.image.alt}" />
+        <div>
+          <p><i class="fa-regular fa-clock"></i> Time</p>
+          <p>
+            <i class="fa-solid fa-people-group"></i> Servings
+            <i class="fa-solid fa-arrows-up-down"></i>
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i> Rating
+          </p>
+        </div>
+      </article>
+    </section>
+  
+    <section class="theRecipe">
+      <article class="description">
+        <h3>Description</h3>
+        <p>
+        ${recipes.acf.description}
+        </p>
+      </article>
+  
+      <article class="ingredients">
+        <h3>Ingredients</h3>
+        ${ingredientsList}
+      </article>
+  
+      <article class="preparation">
+        <h3>Instructions</h3>
+        <ol>
+        ${methodList}
+     </ol>
+      </article>
+      
+      <article id="informationBox">
+        <div class="publishingInformation">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <p>${recipes.acf.author[0].post_title}</p>
+            <p>${recipes.date}</p>
+          </div>
+          <i class="fa-solid fa-share-from-square"></i>
+        </div>
+  
+        <button>
+          <i class="fa-solid fa-toggle-on"></i> I'm in the kitchen
+        </button>
+        <br />
+        <button>
+          <i class="fa-solid fa-cart-shopping"></i> Add ingredients to
+          shopping list
+        </button>
+      </article>
+    </section>
+    <div class="videoContainer">
+    ${videoEl}
+    </div>
+    <section class="recipeSuggestions">
+          <h4>Maybe you would also like...</h4>
+          <article>
+            <a href=""
+              ><img
+                src="./assets/img/eggOnToast.jpg"
+                alt="A toast with an egg topped with herbs"
+                loading="lazy"
+            /></a>
+            <a href=""
+            ><img
+            src="./assets/img/pieStuffedWithEggAndSpinach.jpg"
+            alt="a pie stuffed with boiled eggs, green onions, parsley, dill and spinach"
+            loading="lazy"
+            /></a>
+            <a href=""
+            ><img
+            src="./assets/img/filletWithSauceAndPotatoes.jpg"
+            alt="a fillet in a creamy sauce with boiled potatoes"
+            loading="lazy"
+            /></a>
+            </article>
+            </section>`
+    // KILDER TIL IMG I CLASS="SUGGESTIONS"
+    // KILDE: ADDICTIVE STOCK CREATIVES. https://www.colourbox.com/image/delicious-breakfast-of-fried-eggs-with-toast-and-salad-image-61237509. Colourbox. 2024. Accessed 29.04.2024.
+    // KILDE: Sergii Koval. https://www.colourbox.com/image/homemade-delicious-pie-stuffed-with-boiled-eggs-green-onions-parsley-dill-and-spinach-close-up-on-a-wooden-board-horizontal-image-56650955. Colourbox. 2024. Accessed 29.04.2024. 
+    // KILDE: Sergii Koval. https://www.colourbox.com/image/spicy-herring-fillet-in-a-creamy-sauce-with-a-garnish-of-boiled-potatoes-close-up-in-a-plate-horizontal-image-58864668. Colourbox. 2024. Accessed 29.04.2024.
+};
+
+function getRecipeById(tagId) {
+    fetch(baseUrl + "posts?tags=" + tagId)
+        .then((res) => res.json())
+        .then((data) => {
+            if (data.length > 5) {
+                data = data.slice(0, 5);
+            }
+            data.forEach((recipe, index) => renderRecipebyId(recipe, index))
+        })
+        .catch((err) => {
+            alert("Error! We're sorry to inform you that a mistake has been made. Please try again", err)
+        })
+};
+
+function renderRecipebyId(recipe, index) {
+    mealPlanEls[index].innerHTML += `
+    <a href="recipe.html?id=${recipe.id}"><img src="${recipe.acf.image.url}" class="WPImg" alt="${recipe.title.rendered}">
+    <p class="WPData">${recipe.title.rendered}</p></a>
+    `
+};
+
+function renderPreviousRecipebyId(recipe) {
+    previousMealPlans.innerHTML += `
+    <img src="${recipe.acf.image.url}" class="WPImg flexboxColumn" alt="${recipe.title.rendered}">
+    `
+};
+
+function mealPlanChanger(id, title) {
+    mealPlanEls.forEach((mealPlanEl) => {
+        mealPlanEl.innerHTML = "";
+    });
+    getRecipeById(id);
+    titleOfMealPlan.innerHTML = title;
+};
+
