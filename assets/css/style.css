@@ -247,6 +247,7 @@ nav ul a {
 
 .hero {
   background-image: url(../img/COLOURBOX49500855.jpg);
+  /* // KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/kirsebaer-raa-flok-billede-49500855. Colourbox. 2024 */
   padding-bottom: 120px;
   background-size: cover;
   background-position: left;
@@ -453,6 +454,7 @@ footer {
   height: 486px;
   width: 100%;
   background-image: url(../img/COLOURBOX52673515.jpg);
+  /* // KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/gnocchi-hyggelige-opskrift-billede-52673515. Colourbox. 2024 */
   background-size: cover;
   object-fit: cover;
   position: relative;
@@ -462,6 +464,7 @@ footer {
   height: 486px;
   width: 100%;
   background-image: url(../img/hero.jpg);
+  /* // KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/mad-nul-stof-billede-41284262. Colourbox. 2024 */
   background-size: cover;
   object-fit: cover;
   position: relative;
@@ -729,6 +732,7 @@ footer {
   height: 486px;
   width: 100%;
   background-image: url(../img/COLOURBOX39631047.jpg);
+  /* KILDE: Sofya Bolotina. https://www.colourbox.dk/billede/keto-laks-farve-billede-39631047. Colourbox. 2024 */
   background-size: cover;
   background-position: center;
   position: relative;
