@@ -318,12 +318,12 @@ function renderOnerecipe(containerToFill, recipes) {
     }
 
     let methodList = "";
-    if (recipes.acf.ingredients) {
+    if (recipes.acf.method) {
         // Gennemgår hver nøgle (ingrediens) i objektet
-        for (const key in recipes.acf.ingredients) {
-            const instruction = recipes.acf.ingredients[key];
+        for (const key in recipes.acf.method) {
+            const instruction = recipes.acf.method[key];
             if (instruction) {
-                methodList += `<dd>${instruction}</dd>`;
+                methodList += `<dd>${instruction}</dd> <br>`;
 
             }
             // Opretter en paragraph for hver ingrediens og tilføjer den til ingredientsList
